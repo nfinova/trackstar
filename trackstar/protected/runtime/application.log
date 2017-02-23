@@ -1,0 +1,1523 @@
+2017/02/20 20:57:56 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'trackstar.tbl_migration' doesn't exist. The SQL statement executed was: SHOW FULL COLUMNS FROM `tbl_migration`.
+2017/02/20 23:58:35 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[42S02]: Base table or view not found: 1051 Unknown table 'trackstar.tbl_project'. The SQL statement executed was: DROP TABLE `tbl_project`.
+2017/02/20 23:58:35 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42S02]: Base table or view not found: 1051 Unknown table 'trackstar.tbl_project'. The SQL statement executed was: DROP TABLE `tbl_project`' in D:\TrackStar\framework\db\CDbCommand.php:358
+Stack trace:
+#0 D:\TrackStar\framework\db\CDbCommand.php(1375): CDbCommand->execute()
+#1 D:\TrackStar\framework\db\CDbMigration.php(275): CDbCommand->dropTable('tbl_project')
+#2 D:\TrackStar\trackstar\protected\migrations\m170220_193215_create_project_table.php(20): CDbMigration->dropTable('tbl_project')
+#3 D:\TrackStar\framework\cli\commands\MigrateCommand.php(440): m170220_193215_create_project_table->down()
+#4 D:\TrackStar\framework\cli\commands\MigrateCommand.php(145): MigrateCommand->migrateDown('m170220_193215_...')
+#5 [internal function]: MigrateCommand->actionDown(Array)
+#6 D:\TrackStar\framework\console\CConsoleCommand.php(172): ReflectionMethod->invokeArgs(Object(MigrateCommand), Array)
+#7 D:\TrackStar\framework\console\CConsoleCommandRunner.php(71): CConsoleCommand->run(Array)
+#8 D:\TrackStar\framework\console\CConsoleApplication.php(92): CConsoleCommandRunner->run(Array)
+#9 D:\TrackStar\framework\base\CApplication.php(185): CConsoleApplication->processRequest()
+#10 D:\TrackStar\framework\yiic.php(33): CApplication->run()
+#11 D:\TrackStar\trackstar\protected\yiic.php(7): require_once('D:\\TrackStar\\fr...')
+#12 {main}
+---
+2017/02/21 00:26:10 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in D:\TrackStar\framework\web\auth\CAccessControlFilter.php:183
+Stack trace:
+#0 D:\TrackStar\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 D:\TrackStar\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 D:\TrackStar\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#3 D:\TrackStar\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 D:\TrackStar\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 D:\TrackStar\framework\web\CController.php(291): CFilterChain->run()
+#6 D:\TrackStar\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 D:\TrackStar\framework\web\CWebApplication.php(282): CController->run('admin')
+#8 D:\TrackStar\framework\web\CWebApplication.php(141): CWebApplication->runController('project/admin')
+#9 D:\TrackStar\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#10 D:\TrackStar\trackstar\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/trackstar/index.php?r=project/admin
+HTTP_REFERER=http://localhost:10111/trackstar/index.php?r=project/update&id=1
+---
+2017/02/21 00:26:49 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in D:\TrackStar\framework\web\auth\CAccessControlFilter.php:183
+Stack trace:
+#0 D:\TrackStar\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 D:\TrackStar\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 D:\TrackStar\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#3 D:\TrackStar\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 D:\TrackStar\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 D:\TrackStar\framework\web\CController.php(291): CFilterChain->run()
+#6 D:\TrackStar\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 D:\TrackStar\framework\web\CWebApplication.php(282): CController->run('admin')
+#8 D:\TrackStar\framework\web\CWebApplication.php(141): CWebApplication->runController('project/admin')
+#9 D:\TrackStar\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#10 D:\TrackStar\trackstar\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/trackstar/index.php?r=project/admin
+HTTP_REFERER=http://localhost:10111/trackstar/index.php?r=project/index
+---
+2017/02/21 00:27:21 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in D:\TrackStar\framework\web\auth\CAccessControlFilter.php:183
+Stack trace:
+#0 D:\TrackStar\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 D:\TrackStar\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 D:\TrackStar\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#3 D:\TrackStar\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 D:\TrackStar\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 D:\TrackStar\framework\web\CController.php(291): CFilterChain->run()
+#6 D:\TrackStar\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 D:\TrackStar\framework\web\CWebApplication.php(282): CController->run('admin')
+#8 D:\TrackStar\framework\web\CWebApplication.php(141): CWebApplication->runController('project/admin')
+#9 D:\TrackStar\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#10 D:\TrackStar\trackstar\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/trackstar/index.php?r=project/admin
+HTTP_REFERER=http://localhost:10111/trackstar/index.php?r=project/view&id=1
+---
+2017/02/21 00:35:09 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in D:\TrackStar\framework\web\auth\CAccessControlFilter.php:183
+Stack trace:
+#0 D:\TrackStar\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 D:\TrackStar\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 D:\TrackStar\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#3 D:\TrackStar\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 D:\TrackStar\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 D:\TrackStar\framework\web\CController.php(291): CFilterChain->run()
+#6 D:\TrackStar\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 D:\TrackStar\framework\web\CWebApplication.php(282): CController->run('admin')
+#8 D:\TrackStar\framework\web\CWebApplication.php(141): CWebApplication->runController('project/admin')
+#9 D:\TrackStar\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#10 D:\TrackStar\trackstar\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/trackstar/index.php?r=project/admin
+HTTP_REFERER=http://localhost:10111/trackstar/index.php?r=project/create
+---
+2017/02/21 00:35:59 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in D:\TrackStar\framework\web\auth\CAccessControlFilter.php:183
+Stack trace:
+#0 D:\TrackStar\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 D:\TrackStar\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 D:\TrackStar\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#3 D:\TrackStar\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 D:\TrackStar\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 D:\TrackStar\framework\web\CController.php(291): CFilterChain->run()
+#6 D:\TrackStar\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 D:\TrackStar\framework\web\CWebApplication.php(282): CController->run('delete')
+#8 D:\TrackStar\framework\web\CWebApplication.php(141): CWebApplication->runController('project/delete')
+#9 D:\TrackStar\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#10 D:\TrackStar\trackstar\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/trackstar/index.php?r=project/delete&id=1
+HTTP_REFERER=http://localhost:10111/trackstar/index.php?r=project/view&id=1
+---
+2017/02/21 00:42:04 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in D:\TrackStar\framework\web\auth\CAccessControlFilter.php:183
+Stack trace:
+#0 D:\TrackStar\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 D:\TrackStar\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 D:\TrackStar\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#3 D:\TrackStar\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 D:\TrackStar\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 D:\TrackStar\framework\web\CController.php(291): CFilterChain->run()
+#6 D:\TrackStar\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 D:\TrackStar\framework\web\CWebApplication.php(282): CController->run('admin')
+#8 D:\TrackStar\framework\web\CWebApplication.php(141): CWebApplication->runController('project/admin')
+#9 D:\TrackStar\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#10 D:\TrackStar\trackstar\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/trackstar/index.php?r=project/admin
+HTTP_REFERER=http://localhost:10111/trackstar/index.php?r=project/index
+---
+2017/02/21 00:54:27 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in D:\TrackStar\framework\web\auth\CAccessControlFilter.php:183
+Stack trace:
+#0 D:\TrackStar\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 D:\TrackStar\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 D:\TrackStar\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#3 D:\TrackStar\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 D:\TrackStar\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 D:\TrackStar\framework\web\CController.php(291): CFilterChain->run()
+#6 D:\TrackStar\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 D:\TrackStar\framework\web\CWebApplication.php(282): CController->run('delete')
+#8 D:\TrackStar\framework\web\CWebApplication.php(141): CWebApplication->runController('project/delete')
+#9 D:\TrackStar\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#10 D:\TrackStar\trackstar\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/trackstar/index.php?r=project/delete&id=1
+HTTP_REFERER=http://localhost:10111/trackstar/index.php?r=project/view&id=1
+---
+2017/02/21 00:55:10 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in D:\TrackStar\framework\web\auth\CAccessControlFilter.php:183
+Stack trace:
+#0 D:\TrackStar\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 D:\TrackStar\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 D:\TrackStar\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#3 D:\TrackStar\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 D:\TrackStar\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 D:\TrackStar\framework\web\CController.php(291): CFilterChain->run()
+#6 D:\TrackStar\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 D:\TrackStar\framework\web\CWebApplication.php(282): CController->run('delete')
+#8 D:\TrackStar\framework\web\CWebApplication.php(141): CWebApplication->runController('project/delete')
+#9 D:\TrackStar\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#10 D:\TrackStar\trackstar\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/trackstar/index.php?r=project/delete&id=1
+HTTP_REFERER=http://localhost:10111/trackstar/index.php?r=project/view&id=1
+---
+2017/02/21 00:59:13 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in D:\TrackStar\framework\web\auth\CAccessControlFilter.php:183
+Stack trace:
+#0 D:\TrackStar\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 D:\TrackStar\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 D:\TrackStar\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#3 D:\TrackStar\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 D:\TrackStar\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 D:\TrackStar\framework\web\CController.php(291): CFilterChain->run()
+#6 D:\TrackStar\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 D:\TrackStar\framework\web\CWebApplication.php(282): CController->run('admin')
+#8 D:\TrackStar\framework\web\CWebApplication.php(141): CWebApplication->runController('project/admin')
+#9 D:\TrackStar\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#10 D:\TrackStar\trackstar\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/trackstar/index.php?r=project/admin
+HTTP_REFERER=http://localhost:10111/trackstar/index.php?r=project/index
+---
+2017/02/21 01:30:45 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[42000]: Syntax error or access violation: 1072 Key column 'project_
+        id' doesn't exist in table. The SQL statement executed was: ALTER TABLE `tbl_issue` ADD CONSTRAINT `fk_issue_project` FOREIGN KEY (`project_
+        id`) REFERENCES `tbl_project` (`id`) ON DELETE CASCADE ON UPDATE RESTRICT.
+2017/02/21 01:37:55 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[42S01]: Base table or view already exists: 1050 Table 'tbl_issue' already exists. The SQL statement executed was: CREATE TABLE `tbl_issue` (
+	`id` int(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+	`name` varchar(255) NOT NULL,
+	`description` text,
+	`project_id` int(11) DEFAULT NULL,
+	`type_id` int(11) DEFAULT NULL,
+	`status_id` int(11) DEFAULT NULL,
+	`owner_id` int(11) DEFAULT NULL,
+	`requester_id` int(11) DEFAULT NULL,
+	`create_time` datetime DEFAULT NULL,
+	`create_user_id` int(11) DEFAULT NULL,
+	`update_time` datetime DEFAULT NULL,
+	`update_user_id` int(11) DEFAULT NULL
+) ENGINE=InnoDB.
+2017/02/21 01:39:05 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[42S01]: Base table or view already exists: 1050 Table 'tbl_issue' already exists. The SQL statement executed was: CREATE TABLE `tbl_issue` (
+	`id` int(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+	`name` varchar(255) NOT NULL,
+	`description` text,
+	`project_id` int(11) DEFAULT NULL,
+	`type_id` int(11) DEFAULT NULL,
+	`status_id` int(11) DEFAULT NULL,
+	`owner_id` int(11) DEFAULT NULL,
+	`requester_id` int(11) DEFAULT NULL,
+	`create_time` datetime DEFAULT NULL,
+	`create_user_id` int(11) DEFAULT NULL,
+	`update_time` datetime DEFAULT NULL,
+	`update_user_id` int(11) DEFAULT NULL
+) ENGINE=InnoDB.
+2017/02/21 01:42:54 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[42S01]: Base table or view already exists: 1050 Table 'tbl_issue' already exists. The SQL statement executed was: CREATE TABLE `tbl_issue` (
+	`id` int(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+	`name` varchar(255) NOT NULL,
+	`description` text,
+	`project_id` int(11) DEFAULT NULL,
+	`type_id` int(11) DEFAULT NULL,
+	`status_id` int(11) DEFAULT NULL,
+	`owner_id` int(11) DEFAULT NULL,
+	`requester_id` int(11) DEFAULT NULL,
+	`create_time` datetime DEFAULT NULL,
+	`create_user_id` int(11) DEFAULT NULL,
+	`update_time` datetime DEFAULT NULL,
+	`update_user_id` int(11) DEFAULT NULL
+) ENGINE=InnoDB.
+2017/02/21 01:48:38 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[42S01]: Base table or view already exists: 1050 Table 'tbl_issue' already exists. The SQL statement executed was: CREATE TABLE `tbl_issue` (
+	`id` int(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+	`name` varchar(255) NOT NULL,
+	`description` text,
+	`project_id` int(11) DEFAULT NULL,
+	`type_id` int(11) DEFAULT NULL,
+	`status_id` int(11) DEFAULT NULL,
+	`owner_id` int(11) DEFAULT NULL,
+	`requester_id` int(11) DEFAULT NULL,
+	`create_time` datetime DEFAULT NULL,
+	`create_user_id` int(11) DEFAULT NULL,
+	`update_time` datetime DEFAULT NULL,
+	`update_user_id` int(11) DEFAULT NULL
+) ENGINE=InnoDB.
+2017/02/21 01:49:08 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[42S01]: Base table or view already exists: 1050 Table 'tbl_issue' already exists. The SQL statement executed was: CREATE TABLE `tbl_issue` (
+	`id` int(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+	`name` varchar(255) NOT NULL,
+	`description` text,
+	`project_id` int(11) DEFAULT NULL,
+	`type_id` int(11) DEFAULT NULL,
+	`status_id` int(11) DEFAULT NULL,
+	`owner_id` int(11) DEFAULT NULL,
+	`requester_id` int(11) DEFAULT NULL,
+	`create_time` datetime DEFAULT NULL,
+	`create_user_id` int(11) DEFAULT NULL,
+	`update_time` datetime DEFAULT NULL,
+	`update_user_id` int(11) DEFAULT NULL
+) ENGINE=InnoDB.
+2017/02/21 01:52:38 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[42000]: Syntax error or access violation: 1701 Cannot truncate a table referenced in a foreign key constraint (`trackstar`.`tbl_issue`, CONSTRAINT `fk_issue_owner` FOREIGN KEY (`owner_id`) REFERENCES `trackstar`.`tbl_user` (`id`)). The SQL statement executed was: TRUNCATE TABLE `tbl_user`.
+2017/02/21 01:54:12 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'trackstar.tbl_project_user_assignment' doesn't exist. The SQL statement executed was: TRUNCATE TABLE `tbl_project_user_assignment`.
+2017/02/21 04:06:33 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'Must specify a project before performing this action.' in D:\TrackStar\trackstar\protected\controllers\IssueController.php:216
+Stack trace:
+#0 D:\TrackStar\framework\web\filters\CInlineFilter.php(58): IssueController->filterProjectContext(Object(CFilterChain))
+#1 D:\TrackStar\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#2 D:\TrackStar\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 D:\TrackStar\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#4 D:\TrackStar\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 D:\TrackStar\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#6 D:\TrackStar\framework\web\CController.php(291): CFilterChain->run()
+#7 D:\TrackStar\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 D:\TrackStar\framework\web\CWebApplication.php(282): CController->run('create')
+#9 D:\TrackStar\framework\web\CWebApplication.php(141): CWebApplication->runController('issue/create')
+#10 D:\TrackStar\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#11 D:\TrackStar\trackstar\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/trackstar/index.php?r=issue/create
+HTTP_REFERER=http://localhost:10111/trackstar/index.php?r=issue/index
+---
+2017/02/21 04:06:48 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "create?id=1".' in D:\TrackStar\framework\web\CController.php:486
+Stack trace:
+#0 D:\TrackStar\framework\web\CController.php(270): CController->missingAction('create?id=1')
+#1 D:\TrackStar\framework\web\CWebApplication.php(282): CController->run('create?id=1')
+#2 D:\TrackStar\framework\web\CWebApplication.php(141): CWebApplication->runController('issue/create?id...')
+#3 D:\TrackStar\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 D:\TrackStar\trackstar\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/trackstar/index.php?r=issue/create?id=1
+---
+2017/02/21 04:10:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested project does not exist.' in D:\TrackStar\trackstar\protected\controllers\IssueController.php:196
+Stack trace:
+#0 D:\TrackStar\trackstar\protected\controllers\IssueController.php(213): IssueController->loadProject('1')
+#1 D:\TrackStar\framework\web\filters\CInlineFilter.php(58): IssueController->filterProjectContext(Object(CFilterChain))
+#2 D:\TrackStar\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#3 D:\TrackStar\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#4 D:\TrackStar\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#5 D:\TrackStar\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#6 D:\TrackStar\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#7 D:\TrackStar\framework\web\CController.php(291): CFilterChain->run()
+#8 D:\TrackStar\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 D:\TrackStar\framework\web\CWebApplication.php(282): CController->run('create')
+#10 D:\TrackStar\framework\web\CWebApplication.php(141): CWebApplication->runController('issue/create')
+#11 D:\TrackStar\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#12 D:\TrackStar\trackstar\index.php(13): CApplication->run()
+#13 {main}
+REQUEST_URI=/trackstar/index.php?r=issue/create&pid=1
+---
+2017/02/21 04:19:37 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'Must specify a project before performing this action.' in D:\TrackStar\trackstar\protected\controllers\IssueController.php:216
+Stack trace:
+#0 D:\TrackStar\framework\web\filters\CInlineFilter.php(58): IssueController->filterProjectContext(Object(CFilterChain))
+#1 D:\TrackStar\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#2 D:\TrackStar\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 D:\TrackStar\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#4 D:\TrackStar\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 D:\TrackStar\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#6 D:\TrackStar\framework\web\CController.php(291): CFilterChain->run()
+#7 D:\TrackStar\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 D:\TrackStar\framework\web\CWebApplication.php(282): CController->run('create')
+#9 D:\TrackStar\framework\web\CWebApplication.php(141): CWebApplication->runController('issue/create')
+#10 D:\TrackStar\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#11 D:\TrackStar\trackstar\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/trackstar/index.php?r=issue/create
+---
+2017/02/22 14:53:26 [error] [exception.CDbException] exception 'CDbException' with message 'The relation "users" in active record class "User" is specified with an invalid foreign key. The format of the foreign key must be "joinTable(fk1,fk2,...)".' in D:\TrackStar\framework\db\ar\CActiveRecord.php:2343
+Stack trace:
+#0 D:\TrackStar\framework\db\ar\CActiveRecord.php(2320): CManyManyRelation->initJunctionData()
+#1 D:\TrackStar\framework\db\ar\CActiveFinder.php(546): CManyManyRelation->getJunctionTableName()
+#2 D:\TrackStar\framework\db\ar\CActiveFinder.php(503): CJoinElement->applyLazyCondition(Object(CJoinQuery), Object(Project))
+#3 D:\TrackStar\framework\db\ar\CActiveFinder.php(163): CJoinElement->lazyFind(Object(Project))
+#4 D:\TrackStar\framework\db\ar\CActiveRecord.php(283): CActiveFinder->lazyFind(Object(Project))
+#5 D:\TrackStar\framework\db\ar\CActiveRecord.php(143): CActiveRecord->getRelated('users')
+#6 D:\TrackStar\trackstar\protected\models\Project.php(116): CActiveRecord->__get('users')
+#7 D:\TrackStar\trackstar\protected\views\issue\_form.php(48): Project->getUserOptions()
+#8 D:\TrackStar\framework\web\CBaseController.php(126): require('D:\\TrackStar\\tr...')
+#9 D:\TrackStar\framework\web\CBaseController.php(95): CBaseController->renderInternal('D:\\TrackStar\\tr...', Array, true)
+#10 D:\TrackStar\framework\web\CController.php(872): CBaseController->renderFile('D:\\TrackStar\\tr...', Array, true)
+#11 D:\TrackStar\trackstar\protected\views\issue\create.php(18): CController->renderPartial('_form', Array)
+#12 D:\TrackStar\framework\web\CBaseController.php(126): require('D:\\TrackStar\\tr...')
+#13 D:\TrackStar\framework\web\CBaseController.php(95): CBaseController->renderInternal('D:\\TrackStar\\tr...', Array, true)
+#14 D:\TrackStar\framework\web\CController.php(872): CBaseController->renderFile('D:\\TrackStar\\tr...', Array, true)
+#15 D:\TrackStar\framework\web\CController.php(785): CController->renderPartial('create', Array, true)
+#16 D:\TrackStar\trackstar\protected\controllers\IssueController.php(88): CController->render('create', Array)
+#17 D:\TrackStar\framework\web\actions\CInlineAction.php(49): IssueController->actionCreate()
+#18 D:\TrackStar\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#19 D:\TrackStar\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#20 D:\TrackStar\trackstar\protected\controllers\IssueController.php(220): CFilterChain->run()
+#21 D:\TrackStar\framework\web\filters\CInlineFilter.php(58): IssueController->filterProjectContext(Object(CFilterChain))
+#22 D:\TrackStar\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#23 D:\TrackStar\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#24 D:\TrackStar\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#25 D:\TrackStar\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#26 D:\TrackStar\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#27 D:\TrackStar\framework\web\CController.php(291): CFilterChain->run()
+#28 D:\TrackStar\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#29 D:\TrackStar\framework\web\CWebApplication.php(282): CController->run('create')
+#30 D:\TrackStar\framework\web\CWebApplication.php(141): CWebApplication->runController('issue/create')
+#31 D:\TrackStar\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#32 D:\TrackStar\trackstar\index.php(13): CApplication->run()
+#33 {main}
+REQUEST_URI=/trackstar/index.php?r=issue/create&pid=1
+HTTP_REFERER=http://localhost:10111/trackstar/index.php?r=site/login
+---
+2017/02/22 15:06:55 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'Must specify a project before performing this action.' in D:\TrackStar\trackstar\protected\controllers\IssueController.php:217
+Stack trace:
+#0 D:\TrackStar\framework\web\filters\CInlineFilter.php(58): IssueController->filterProjectContext(Object(CFilterChain))
+#1 D:\TrackStar\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#2 D:\TrackStar\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 D:\TrackStar\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#4 D:\TrackStar\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 D:\TrackStar\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#6 D:\TrackStar\framework\web\CController.php(291): CFilterChain->run()
+#7 D:\TrackStar\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 D:\TrackStar\framework\web\CWebApplication.php(282): CController->run('create')
+#9 D:\TrackStar\framework\web\CWebApplication.php(141): CWebApplication->runController('issue/create')
+#10 D:\TrackStar\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#11 D:\TrackStar\trackstar\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/trackstar/index.php?r=issue/create
+---
+2017/02/22 15:07:02 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'Must specify a project before performing this action.' in D:\TrackStar\trackstar\protected\controllers\IssueController.php:217
+Stack trace:
+#0 D:\TrackStar\framework\web\filters\CInlineFilter.php(58): IssueController->filterProjectContext(Object(CFilterChain))
+#1 D:\TrackStar\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#2 D:\TrackStar\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 D:\TrackStar\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#4 D:\TrackStar\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 D:\TrackStar\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#6 D:\TrackStar\framework\web\CController.php(291): CFilterChain->run()
+#7 D:\TrackStar\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 D:\TrackStar\framework\web\CWebApplication.php(282): CController->run('create')
+#9 D:\TrackStar\framework\web\CWebApplication.php(141): CWebApplication->runController('issue/create')
+#10 D:\TrackStar\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#11 D:\TrackStar\trackstar\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/trackstar/index.php?r=issue/create&pid2
+---
+2017/02/22 15:47:00 [error] [php] Undefined variable: statusOptions (D:\TrackStar\trackstar\protected\models\Issue.php:190)
+Stack trace:
+#0 D:\TrackStar\framework\web\CBaseController.php(95): IssueController->renderInternal()
+#1 D:\TrackStar\framework\zii\widgets\CListView.php(291): IssueController->renderFile()
+#2 D:\TrackStar\framework\zii\widgets\CBaseListView.php(181): CListView->renderItems()
+#3 unknown(0): CListView->renderSection()
+#4 D:\TrackStar\framework\zii\widgets\CBaseListView.php(164): preg_replace_callback()
+#5 D:\TrackStar\framework\zii\widgets\CBaseListView.php(149): CListView->renderContent()
+#6 D:\TrackStar\framework\web\CBaseController.php(182): CListView->run()
+#7 D:\TrackStar\trackstar\protected\views\issue\index.php(19): IssueController->widget()
+#8 D:\TrackStar\framework\web\CBaseController.php(126): require()
+#9 D:\TrackStar\framework\web\CBaseController.php(95): IssueController->renderInternal()
+#10 D:\TrackStar\framework\web\CController.php(872): IssueController->renderFile()
+#11 D:\TrackStar\framework\web\CController.php(785): IssueController->renderPartial()
+#12 D:\TrackStar\trackstar\protected\controllers\IssueController.php(137): IssueController->render()
+#13 D:\TrackStar\framework\web\actions\CInlineAction.php(49): IssueController->actionIndex()
+#14 D:\TrackStar\framework\web\CController.php(308): CInlineAction->runWithParams()
+#15 D:\TrackStar\framework\web\filters\CFilterChain.php(134): IssueController->runAction()
+#16 D:\TrackStar\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#17 D:\TrackStar\framework\web\CController.php(1148): CAccessControlFilter->filter()
+#18 D:\TrackStar\framework\web\filters\CInlineFilter.php(58): IssueController->filterAccessControl()
+#19 D:\TrackStar\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#20 D:\TrackStar\framework\web\CController.php(291): CFilterChain->run()
+#21 D:\TrackStar\framework\web\CController.php(265): IssueController->runActionWithFilters()
+#22 D:\TrackStar\framework\web\CWebApplication.php(282): IssueController->run()
+#23 D:\TrackStar\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#24 D:\TrackStar\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#25 D:\TrackStar\trackstar\index.php(13): CWebApplication->run()
+REQUEST_URI=/trackstar/index.php?r=issue/index
+in D:\TrackStar\trackstar\protected\models\Issue.php (190)
+in D:\TrackStar\trackstar\protected\views\issue\_view.php (17)
+in D:\TrackStar\trackstar\protected\views\issue\index.php (19)
+2017/02/22 15:47:12 [error] [php] Undefined variable: statusOptions (D:\TrackStar\trackstar\protected\models\Issue.php:190)
+Stack trace:
+#0 D:\TrackStar\framework\web\CBaseController.php(95): ProjectController->renderInternal()
+#1 D:\TrackStar\framework\zii\widgets\CListView.php(291): ProjectController->renderFile()
+#2 D:\TrackStar\framework\zii\widgets\CBaseListView.php(181): CListView->renderItems()
+#3 unknown(0): CListView->renderSection()
+#4 D:\TrackStar\framework\zii\widgets\CBaseListView.php(164): preg_replace_callback()
+#5 D:\TrackStar\framework\zii\widgets\CBaseListView.php(149): CListView->renderContent()
+#6 D:\TrackStar\framework\web\CBaseController.php(182): CListView->run()
+#7 D:\TrackStar\trackstar\protected\views\project\view.php(41): ProjectController->widget()
+#8 D:\TrackStar\framework\web\CBaseController.php(126): require()
+#9 D:\TrackStar\framework\web\CBaseController.php(95): ProjectController->renderInternal()
+#10 D:\TrackStar\framework\web\CController.php(872): ProjectController->renderFile()
+#11 D:\TrackStar\framework\web\CController.php(785): ProjectController->renderPartial()
+#12 D:\TrackStar\trackstar\protected\controllers\ProjectController.php(68): ProjectController->render()
+#13 unknown(0): ProjectController->actionView()
+#14 D:\TrackStar\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs()
+#15 D:\TrackStar\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#16 D:\TrackStar\framework\web\CController.php(308): CInlineAction->runWithParams()
+#17 D:\TrackStar\framework\web\filters\CFilterChain.php(134): ProjectController->runAction()
+#18 D:\TrackStar\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#19 D:\TrackStar\framework\web\CController.php(1148): CAccessControlFilter->filter()
+#20 D:\TrackStar\framework\web\filters\CInlineFilter.php(58): ProjectController->filterAccessControl()
+#21 D:\TrackStar\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#22 D:\TrackStar\framework\web\CController.php(291): CFilterChain->run()
+#23 D:\TrackStar\framework\web\CController.php(265): ProjectController->runActionWithFilters()
+#24 D:\TrackStar\framework\web\CWebApplication.php(282): ProjectController->run()
+#25 D:\TrackStar\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#26 D:\TrackStar\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#27 D:\TrackStar\trackstar\index.php(13): CWebApplication->run()
+REQUEST_URI=/trackstar/index.php?r=project/view&id=1
+in D:\TrackStar\trackstar\protected\models\Issue.php (190)
+in D:\TrackStar\trackstar\protected\views\issue\_view.php (17)
+in D:\TrackStar\trackstar\protected\views\project\view.php (41)
+2017/02/22 21:15:31 [error] [exception.CException] exception 'CException' with message 'Property "Issue.getTypeOptions" is not defined.' in D:\TrackStar\framework\base\CComponent.php:130
+Stack trace:
+#0 D:\TrackStar\framework\db\ar\CActiveRecord.php(145): CComponent->__get('getTypeOptions')
+#1 D:\TrackStar\trackstar\protected\models\Issue.php(189): CActiveRecord->__get('getTypeOptions')
+#2 D:\TrackStar\trackstar\protected\views\issue\_view.php(17): Issue->getTypeText()
+#3 D:\TrackStar\framework\web\CBaseController.php(130): require('D:\\TrackStar\\tr...')
+#4 D:\TrackStar\framework\web\CBaseController.php(95): CBaseController->renderInternal('D:\\TrackStar\\tr...', Array, false)
+#5 D:\TrackStar\framework\zii\widgets\CListView.php(291): CBaseController->renderFile('D:\\TrackStar\\tr...', Array)
+#6 D:\TrackStar\framework\zii\widgets\CBaseListView.php(181): CListView->renderItems()
+#7 [internal function]: CBaseListView->renderSection(Array)
+#8 D:\TrackStar\framework\zii\widgets\CBaseListView.php(164): preg_replace_callback('/{(\\w+)}/', Array, '{summary}\n{sort...')
+#9 D:\TrackStar\framework\zii\widgets\CBaseListView.php(149): CBaseListView->renderContent()
+#10 D:\TrackStar\framework\web\CBaseController.php(182): CBaseListView->run()
+#11 D:\TrackStar\trackstar\protected\views\project\view.php(41): CBaseController->widget('zii.widgets.CLi...', Array)
+#12 D:\TrackStar\framework\web\CBaseController.php(126): require('D:\\TrackStar\\tr...')
+#13 D:\TrackStar\framework\web\CBaseController.php(95): CBaseController->renderInternal('D:\\TrackStar\\tr...', Array, true)
+#14 D:\TrackStar\framework\web\CController.php(872): CBaseController->renderFile('D:\\TrackStar\\tr...', Array, true)
+#15 D:\TrackStar\framework\web\CController.php(785): CController->renderPartial('view', Array, true)
+#16 D:\TrackStar\trackstar\protected\controllers\ProjectController.php(68): CController->render('view', Array)
+#17 [internal function]: ProjectController->actionView('1')
+#18 D:\TrackStar\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(ProjectController), Array)
+#19 D:\TrackStar\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(ProjectController), Object(ReflectionMethod), Array)
+#20 D:\TrackStar\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#21 D:\TrackStar\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#22 D:\TrackStar\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#23 D:\TrackStar\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#24 D:\TrackStar\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#25 D:\TrackStar\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#26 D:\TrackStar\framework\web\CController.php(291): CFilterChain->run()
+#27 D:\TrackStar\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#28 D:\TrackStar\framework\web\CWebApplication.php(282): CController->run('view')
+#29 D:\TrackStar\framework\web\CWebApplication.php(141): CWebApplication->runController('project/view')
+#30 D:\TrackStar\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#31 D:\TrackStar\trackstar\index.php(13): CApplication->run()
+#32 {main}
+REQUEST_URI=/trackstar/index.php?r=project/view&id=1
+HTTP_REFERER=http://localhost:10111/trackstar/index.php?r=project/index
+---
+2017/02/22 21:28:30 [error] [exception.CException] exception 'CException' with message 'Property "Issue.statusoaptions" is not defined.' in D:\TrackStar\framework\base\CComponent.php:130
+Stack trace:
+#0 D:\TrackStar\framework\db\ar\CActiveRecord.php(145): CComponent->__get('statusoaptions')
+#1 D:\TrackStar\trackstar\protected\models\Issue.php(171): CActiveRecord->__get('statusoaptions')
+#2 D:\TrackStar\trackstar\protected\views\issue\_view.php(21): Issue->getStatusText()
+#3 D:\TrackStar\framework\web\CBaseController.php(130): require('D:\\TrackStar\\tr...')
+#4 D:\TrackStar\framework\web\CBaseController.php(95): CBaseController->renderInternal('D:\\TrackStar\\tr...', Array, false)
+#5 D:\TrackStar\framework\zii\widgets\CListView.php(291): CBaseController->renderFile('D:\\TrackStar\\tr...', Array)
+#6 D:\TrackStar\framework\zii\widgets\CBaseListView.php(181): CListView->renderItems()
+#7 [internal function]: CBaseListView->renderSection(Array)
+#8 D:\TrackStar\framework\zii\widgets\CBaseListView.php(164): preg_replace_callback('/{(\\w+)}/', Array, '{summary}\n{sort...')
+#9 D:\TrackStar\framework\zii\widgets\CBaseListView.php(149): CBaseListView->renderContent()
+#10 D:\TrackStar\framework\web\CBaseController.php(182): CBaseListView->run()
+#11 D:\TrackStar\trackstar\protected\views\project\view.php(41): CBaseController->widget('zii.widgets.CLi...', Array)
+#12 D:\TrackStar\framework\web\CBaseController.php(126): require('D:\\TrackStar\\tr...')
+#13 D:\TrackStar\framework\web\CBaseController.php(95): CBaseController->renderInternal('D:\\TrackStar\\tr...', Array, true)
+#14 D:\TrackStar\framework\web\CController.php(872): CBaseController->renderFile('D:\\TrackStar\\tr...', Array, true)
+#15 D:\TrackStar\framework\web\CController.php(785): CController->renderPartial('view', Array, true)
+#16 D:\TrackStar\trackstar\protected\controllers\ProjectController.php(68): CController->render('view', Array)
+#17 [internal function]: ProjectController->actionView('1')
+#18 D:\TrackStar\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(ProjectController), Array)
+#19 D:\TrackStar\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(ProjectController), Object(ReflectionMethod), Array)
+#20 D:\TrackStar\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#21 D:\TrackStar\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#22 D:\TrackStar\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#23 D:\TrackStar\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#24 D:\TrackStar\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#25 D:\TrackStar\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#26 D:\TrackStar\framework\web\CController.php(291): CFilterChain->run()
+#27 D:\TrackStar\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#28 D:\TrackStar\framework\web\CWebApplication.php(282): CController->run('view')
+#29 D:\TrackStar\framework\web\CWebApplication.php(141): CWebApplication->runController('project/view')
+#30 D:\TrackStar\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#31 D:\TrackStar\trackstar\index.php(13): CApplication->run()
+#32 {main}
+REQUEST_URI=/trackstar/index.php?r=project/view&id=1
+HTTP_REFERER=http://localhost:10111/trackstar/index.php?r=project/index
+---
+2017/02/22 21:37:42 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in D:\TrackStar\framework\web\CController.php:337
+Stack trace:
+#0 D:\TrackStar\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 D:\TrackStar\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#2 D:\TrackStar\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 D:\TrackStar\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#4 D:\TrackStar\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 D:\TrackStar\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#6 D:\TrackStar\framework\web\CController.php(291): CFilterChain->run()
+#7 D:\TrackStar\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 D:\TrackStar\framework\web\CWebApplication.php(282): CController->run('view')
+#9 D:\TrackStar\framework\web\CWebApplication.php(141): CWebApplication->runController('issue/view')
+#10 D:\TrackStar\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#11 D:\TrackStar\trackstar\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/trackstar/index.php?r=issue/view
+---
+2017/02/22 21:37:50 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in D:\TrackStar\framework\web\CController.php:337
+Stack trace:
+#0 D:\TrackStar\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 D:\TrackStar\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#2 D:\TrackStar\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 D:\TrackStar\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#4 D:\TrackStar\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 D:\TrackStar\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#6 D:\TrackStar\framework\web\CController.php(291): CFilterChain->run()
+#7 D:\TrackStar\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 D:\TrackStar\framework\web\CWebApplication.php(282): CController->run('view')
+#9 D:\TrackStar\framework\web\CWebApplication.php(141): CWebApplication->runController('issue/view')
+#10 D:\TrackStar\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#11 D:\TrackStar\trackstar\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/trackstar/index.php?r=issue/view&pid=1
+---
+2017/02/22 21:38:50 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in D:\TrackStar\framework\web\CController.php:337
+Stack trace:
+#0 D:\TrackStar\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 D:\TrackStar\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#2 D:\TrackStar\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 D:\TrackStar\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#4 D:\TrackStar\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 D:\TrackStar\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#6 D:\TrackStar\framework\web\CController.php(291): CFilterChain->run()
+#7 D:\TrackStar\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 D:\TrackStar\framework\web\CWebApplication.php(282): CController->run('view')
+#9 D:\TrackStar\framework\web\CWebApplication.php(141): CWebApplication->runController('issue/view')
+#10 D:\TrackStar\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#11 D:\TrackStar\trackstar\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/trackstar/index.php?r=issue/view
+---
+2017/02/22 21:49:25 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'Must specify a project before performing this action.' in D:\TrackStar\trackstar\protected\controllers\IssueController.php:217
+Stack trace:
+#0 D:\TrackStar\framework\web\filters\CInlineFilter.php(58): IssueController->filterProjectContext(Object(CFilterChain))
+#1 D:\TrackStar\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#2 D:\TrackStar\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 D:\TrackStar\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#4 D:\TrackStar\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 D:\TrackStar\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#6 D:\TrackStar\framework\web\CController.php(291): CFilterChain->run()
+#7 D:\TrackStar\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 D:\TrackStar\framework\web\CWebApplication.php(282): CController->run('index')
+#9 D:\TrackStar\framework\web\CWebApplication.php(141): CWebApplication->runController('issue/index')
+#10 D:\TrackStar\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#11 D:\TrackStar\trackstar\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/trackstar/index.php?r=issue/index
+HTTP_REFERER=http://localhost:10111/trackstar/index.php?r=issue/admin
+---
+2017/02/22 21:49:30 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'Must specify a project before performing this action.' in D:\TrackStar\trackstar\protected\controllers\IssueController.php:217
+Stack trace:
+#0 D:\TrackStar\framework\web\filters\CInlineFilter.php(58): IssueController->filterProjectContext(Object(CFilterChain))
+#1 D:\TrackStar\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#2 D:\TrackStar\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 D:\TrackStar\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#4 D:\TrackStar\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 D:\TrackStar\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#6 D:\TrackStar\framework\web\CController.php(291): CFilterChain->run()
+#7 D:\TrackStar\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 D:\TrackStar\framework\web\CWebApplication.php(282): CController->run('admin')
+#9 D:\TrackStar\framework\web\CWebApplication.php(141): CWebApplication->runController('issue/admin')
+#10 D:\TrackStar\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#11 D:\TrackStar\trackstar\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/trackstar/index.php?r=issue/admin
+HTTP_REFERER=http://localhost:10111/trackstar/index.php?r=site/login
+---
+2017/02/22 22:04:52 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'Must specify a project before performing this action.' in D:\TrackStar\trackstar\protected\controllers\IssueController.php:224
+Stack trace:
+#0 D:\TrackStar\framework\web\filters\CInlineFilter.php(58): IssueController->filterProjectContext(Object(CFilterChain))
+#1 D:\TrackStar\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#2 D:\TrackStar\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 D:\TrackStar\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#4 D:\TrackStar\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 D:\TrackStar\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#6 D:\TrackStar\framework\web\CController.php(291): CFilterChain->run()
+#7 D:\TrackStar\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 D:\TrackStar\framework\web\CWebApplication.php(282): CController->run('admin')
+#9 D:\TrackStar\framework\web\CWebApplication.php(141): CWebApplication->runController('issue/admin')
+#10 D:\TrackStar\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#11 D:\TrackStar\trackstar\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/trackstar/index.php?r=issue/admin
+HTTP_REFERER=http://localhost:10111/trackstar/index.php?r=issue/index&pid=1
+---
+2017/02/22 22:05:39 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'Must specify a project before performing this action.' in D:\TrackStar\trackstar\protected\controllers\IssueController.php:224
+Stack trace:
+#0 D:\TrackStar\framework\web\filters\CInlineFilter.php(58): IssueController->filterProjectContext(Object(CFilterChain))
+#1 D:\TrackStar\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#2 D:\TrackStar\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 D:\TrackStar\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#4 D:\TrackStar\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 D:\TrackStar\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#6 D:\TrackStar\framework\web\CController.php(291): CFilterChain->run()
+#7 D:\TrackStar\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 D:\TrackStar\framework\web\CWebApplication.php(282): CController->run('admin')
+#9 D:\TrackStar\framework\web\CWebApplication.php(141): CWebApplication->runController('issue/admin')
+#10 D:\TrackStar\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#11 D:\TrackStar\trackstar\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/trackstar/index.php?r=issue/admin
+HTTP_REFERER=http://localhost:10111/trackstar/index.php?r=issue/index&pid=1
+---
+2017/02/22 22:06:50 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'Must specify a project before performing this action.' in D:\TrackStar\trackstar\protected\controllers\IssueController.php:224
+Stack trace:
+#0 D:\TrackStar\framework\web\filters\CInlineFilter.php(58): IssueController->filterProjectContext(Object(CFilterChain))
+#1 D:\TrackStar\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#2 D:\TrackStar\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 D:\TrackStar\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#4 D:\TrackStar\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 D:\TrackStar\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#6 D:\TrackStar\framework\web\CController.php(291): CFilterChain->run()
+#7 D:\TrackStar\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 D:\TrackStar\framework\web\CWebApplication.php(282): CController->run('admin')
+#9 D:\TrackStar\framework\web\CWebApplication.php(141): CWebApplication->runController('issue/admin')
+#10 D:\TrackStar\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#11 D:\TrackStar\trackstar\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/trackstar/index.php?r=issue/admin
+HTTP_REFERER=http://localhost:10111/trackstar/index.php?r=issue/index&pid=2
+---
+2017/02/22 22:07:24 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'Must specify a project before performing this action.' in D:\TrackStar\trackstar\protected\controllers\IssueController.php:224
+Stack trace:
+#0 D:\TrackStar\framework\web\filters\CInlineFilter.php(58): IssueController->filterProjectContext(Object(CFilterChain))
+#1 D:\TrackStar\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#2 D:\TrackStar\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 D:\TrackStar\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#4 D:\TrackStar\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 D:\TrackStar\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#6 D:\TrackStar\framework\web\CController.php(291): CFilterChain->run()
+#7 D:\TrackStar\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 D:\TrackStar\framework\web\CWebApplication.php(282): CController->run('admin')
+#9 D:\TrackStar\framework\web\CWebApplication.php(141): CWebApplication->runController('issue/admin')
+#10 D:\TrackStar\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#11 D:\TrackStar\trackstar\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/trackstar/index.php?r=issue/admin
+HTTP_REFERER=http://localhost:10111/trackstar/index.php?r=issue/index&pid=2
+---
+2017/02/22 22:08:17 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'Must specify a project before performing this action.' in D:\TrackStar\trackstar\protected\controllers\IssueController.php:224
+Stack trace:
+#0 D:\TrackStar\framework\web\filters\CInlineFilter.php(58): IssueController->filterProjectContext(Object(CFilterChain))
+#1 D:\TrackStar\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#2 D:\TrackStar\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 D:\TrackStar\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#4 D:\TrackStar\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 D:\TrackStar\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#6 D:\TrackStar\framework\web\CController.php(291): CFilterChain->run()
+#7 D:\TrackStar\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 D:\TrackStar\framework\web\CWebApplication.php(282): CController->run('index')
+#9 D:\TrackStar\framework\web\CWebApplication.php(141): CWebApplication->runController('issue/index')
+#10 D:\TrackStar\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#11 D:\TrackStar\trackstar\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/trackstar/index.php?r=issue/index
+HTTP_REFERER=http://localhost:10111/trackstar/index.php?r=issue/admin&pid=1
+---
+2017/02/22 22:08:43 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'Must specify a project before performing this action.' in D:\TrackStar\trackstar\protected\controllers\IssueController.php:224
+Stack trace:
+#0 D:\TrackStar\framework\web\filters\CInlineFilter.php(58): IssueController->filterProjectContext(Object(CFilterChain))
+#1 D:\TrackStar\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#2 D:\TrackStar\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 D:\TrackStar\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#4 D:\TrackStar\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 D:\TrackStar\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#6 D:\TrackStar\framework\web\CController.php(291): CFilterChain->run()
+#7 D:\TrackStar\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 D:\TrackStar\framework\web\CWebApplication.php(282): CController->run('index')
+#9 D:\TrackStar\framework\web\CWebApplication.php(141): CWebApplication->runController('issue/index')
+#10 D:\TrackStar\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#11 D:\TrackStar\trackstar\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/trackstar/index.php?r=issue/index
+HTTP_REFERER=http://localhost:10111/trackstar/index.php?r=issue/admin&pid=1
+---
+2017/02/22 22:11:21 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'Must specify a project before performing this action.' in D:\TrackStar\trackstar\protected\controllers\IssueController.php:224
+Stack trace:
+#0 D:\TrackStar\framework\web\filters\CInlineFilter.php(58): IssueController->filterProjectContext(Object(CFilterChain))
+#1 D:\TrackStar\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#2 D:\TrackStar\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 D:\TrackStar\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#4 D:\TrackStar\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 D:\TrackStar\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#6 D:\TrackStar\framework\web\CController.php(291): CFilterChain->run()
+#7 D:\TrackStar\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 D:\TrackStar\framework\web\CWebApplication.php(282): CController->run('index')
+#9 D:\TrackStar\framework\web\CWebApplication.php(141): CWebApplication->runController('issue/index')
+#10 D:\TrackStar\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#11 D:\TrackStar\trackstar\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/trackstar/index.php?r=issue/index
+HTTP_REFERER=http://localhost:10111/trackstar/index.php?r=issue/view&id=4
+---
+2017/02/22 22:11:36 [error] [php] Undefined variable: model (D:\TrackStar\trackstar\protected\views\issue\index.php:10)
+Stack trace:
+#0 D:\TrackStar\framework\web\CController.php(872): IssueController->renderFile()
+#1 D:\TrackStar\framework\web\CController.php(785): IssueController->renderPartial()
+#2 D:\TrackStar\trackstar\protected\controllers\IssueController.php(142): IssueController->render()
+#3 D:\TrackStar\framework\web\actions\CInlineAction.php(49): IssueController->actionIndex()
+#4 D:\TrackStar\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 D:\TrackStar\framework\web\filters\CFilterChain.php(134): IssueController->runAction()
+#6 D:\TrackStar\trackstar\protected\controllers\IssueController.php(227): CFilterChain->run()
+#7 D:\TrackStar\framework\web\filters\CInlineFilter.php(58): IssueController->filterProjectContext()
+#8 D:\TrackStar\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#9 D:\TrackStar\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#10 D:\TrackStar\framework\web\CController.php(1148): CAccessControlFilter->filter()
+#11 D:\TrackStar\framework\web\filters\CInlineFilter.php(58): IssueController->filterAccessControl()
+#12 D:\TrackStar\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#13 D:\TrackStar\framework\web\CController.php(291): CFilterChain->run()
+#14 D:\TrackStar\framework\web\CController.php(265): IssueController->runActionWithFilters()
+#15 D:\TrackStar\framework\web\CWebApplication.php(282): IssueController->run()
+#16 D:\TrackStar\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#17 D:\TrackStar\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#18 D:\TrackStar\trackstar\index.php(13): CWebApplication->run()
+REQUEST_URI=/trackstar/index.php?r=issue/index&pid=1
+in D:\TrackStar\trackstar\protected\views\issue\index.php (10)
+in D:\TrackStar\trackstar\protected\controllers\IssueController.php (142)
+in D:\TrackStar\trackstar\protected\controllers\IssueController.php (227)
+2017/02/22 22:14:38 [error] [php] Undefined variable: model (D:\TrackStar\trackstar\protected\views\issue\index.php:10)
+Stack trace:
+#0 D:\TrackStar\framework\web\CController.php(872): IssueController->renderFile()
+#1 D:\TrackStar\framework\web\CController.php(785): IssueController->renderPartial()
+#2 D:\TrackStar\trackstar\protected\controllers\IssueController.php(142): IssueController->render()
+#3 D:\TrackStar\framework\web\actions\CInlineAction.php(49): IssueController->actionIndex()
+#4 D:\TrackStar\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 D:\TrackStar\framework\web\filters\CFilterChain.php(134): IssueController->runAction()
+#6 D:\TrackStar\trackstar\protected\controllers\IssueController.php(227): CFilterChain->run()
+#7 D:\TrackStar\framework\web\filters\CInlineFilter.php(58): IssueController->filterProjectContext()
+#8 D:\TrackStar\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#9 D:\TrackStar\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#10 D:\TrackStar\framework\web\CController.php(1148): CAccessControlFilter->filter()
+#11 D:\TrackStar\framework\web\filters\CInlineFilter.php(58): IssueController->filterAccessControl()
+#12 D:\TrackStar\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#13 D:\TrackStar\framework\web\CController.php(291): CFilterChain->run()
+#14 D:\TrackStar\framework\web\CController.php(265): IssueController->runActionWithFilters()
+#15 D:\TrackStar\framework\web\CWebApplication.php(282): IssueController->run()
+#16 D:\TrackStar\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#17 D:\TrackStar\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#18 D:\TrackStar\trackstar\index.php(13): CWebApplication->run()
+REQUEST_URI=/trackstar/index.php?r=issue/index&pid=1
+in D:\TrackStar\trackstar\protected\views\issue\index.php (10)
+in D:\TrackStar\trackstar\protected\controllers\IssueController.php (142)
+in D:\TrackStar\trackstar\protected\controllers\IssueController.php (227)
+2017/02/22 22:15:20 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'Must specify a project before performing this action.' in D:\TrackStar\trackstar\protected\controllers\IssueController.php:224
+Stack trace:
+#0 D:\TrackStar\framework\web\filters\CInlineFilter.php(58): IssueController->filterProjectContext(Object(CFilterChain))
+#1 D:\TrackStar\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#2 D:\TrackStar\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 D:\TrackStar\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#4 D:\TrackStar\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 D:\TrackStar\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#6 D:\TrackStar\framework\web\CController.php(291): CFilterChain->run()
+#7 D:\TrackStar\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 D:\TrackStar\framework\web\CWebApplication.php(282): CController->run('admin')
+#9 D:\TrackStar\framework\web\CWebApplication.php(141): CWebApplication->runController('issue/admin')
+#10 D:\TrackStar\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#11 D:\TrackStar\trackstar\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/trackstar/index.php?r=issue/admin
+HTTP_REFERER=http://localhost:10111/trackstar/index.php?r=issue/index&pid=1
+---
+2017/02/22 22:16:31 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'Must specify a project before performing this action.' in D:\TrackStar\trackstar\protected\controllers\IssueController.php:224
+Stack trace:
+#0 D:\TrackStar\framework\web\filters\CInlineFilter.php(58): IssueController->filterProjectContext(Object(CFilterChain))
+#1 D:\TrackStar\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#2 D:\TrackStar\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 D:\TrackStar\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#4 D:\TrackStar\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 D:\TrackStar\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#6 D:\TrackStar\framework\web\CController.php(291): CFilterChain->run()
+#7 D:\TrackStar\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 D:\TrackStar\framework\web\CWebApplication.php(282): CController->run('index')
+#9 D:\TrackStar\framework\web\CWebApplication.php(141): CWebApplication->runController('issue/index')
+#10 D:\TrackStar\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#11 D:\TrackStar\trackstar\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/trackstar/index.php?r=issue/index
+HTTP_REFERER=http://localhost:10111/trackstar/index.php?r=issue/admin&pid=1
+---
+2017/02/22 22:19:13 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'Must specify a project before performing this action.' in D:\TrackStar\trackstar\protected\controllers\IssueController.php:224
+Stack trace:
+#0 D:\TrackStar\framework\web\filters\CInlineFilter.php(58): IssueController->filterProjectContext(Object(CFilterChain))
+#1 D:\TrackStar\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#2 D:\TrackStar\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 D:\TrackStar\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#4 D:\TrackStar\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 D:\TrackStar\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#6 D:\TrackStar\framework\web\CController.php(291): CFilterChain->run()
+#7 D:\TrackStar\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 D:\TrackStar\framework\web\CWebApplication.php(282): CController->run('index')
+#9 D:\TrackStar\framework\web\CWebApplication.php(141): CWebApplication->runController('issue/index')
+#10 D:\TrackStar\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#11 D:\TrackStar\trackstar\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/trackstar/index.php?r=issue/index
+HTTP_REFERER=http://localhost:10111/trackstar/index.php?r=issue/admin&pid=1
+---
+2017/02/22 22:22:37 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'Must specify a project before performing this action.' in D:\TrackStar\trackstar\protected\controllers\IssueController.php:225
+Stack trace:
+#0 D:\TrackStar\framework\web\filters\CInlineFilter.php(58): IssueController->filterProjectContext(Object(CFilterChain))
+#1 D:\TrackStar\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#2 D:\TrackStar\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 D:\TrackStar\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#4 D:\TrackStar\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 D:\TrackStar\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#6 D:\TrackStar\framework\web\CController.php(291): CFilterChain->run()
+#7 D:\TrackStar\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 D:\TrackStar\framework\web\CWebApplication.php(282): CController->run('index')
+#9 D:\TrackStar\framework\web\CWebApplication.php(141): CWebApplication->runController('issue/index')
+#10 D:\TrackStar\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#11 D:\TrackStar\trackstar\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/trackstar/index.php?r=issue/index
+HTTP_REFERER=http://localhost:10111/trackstar/index.php?r=issue/admin&pid=1
+---
+2017/02/22 22:22:51 [error] [php] Undefined variable: model (D:\TrackStar\trackstar\protected\controllers\IssueController.php:142)
+Stack trace:
+#0 D:\TrackStar\framework\web\filters\CFilterChain.php(134): IssueController->runAction()
+#1 D:\TrackStar\trackstar\protected\controllers\IssueController.php(228): CFilterChain->run()
+#2 D:\TrackStar\framework\web\filters\CInlineFilter.php(58): IssueController->filterProjectContext()
+#3 D:\TrackStar\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#4 D:\TrackStar\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#5 D:\TrackStar\framework\web\CController.php(1148): CAccessControlFilter->filter()
+#6 D:\TrackStar\framework\web\filters\CInlineFilter.php(58): IssueController->filterAccessControl()
+#7 D:\TrackStar\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#8 D:\TrackStar\framework\web\CController.php(291): CFilterChain->run()
+#9 D:\TrackStar\framework\web\CController.php(265): IssueController->runActionWithFilters()
+#10 D:\TrackStar\framework\web\CWebApplication.php(282): IssueController->run()
+#11 D:\TrackStar\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#12 D:\TrackStar\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#13 D:\TrackStar\trackstar\index.php(13): CWebApplication->run()
+REQUEST_URI=/trackstar/index.php?r=issue/index&pid=1
+in D:\TrackStar\trackstar\protected\controllers\IssueController.php (142)
+in D:\TrackStar\trackstar\protected\controllers\IssueController.php (228)
+in D:\TrackStar\trackstar\index.php (13)
+2017/02/22 22:25:58 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested project does not exist.' in D:\TrackStar\trackstar\protected\controllers\IssueController.php:204
+Stack trace:
+#0 D:\TrackStar\trackstar\protected\controllers\IssueController.php(221): IssueController->loadProject('Issue')
+#1 D:\TrackStar\framework\web\filters\CInlineFilter.php(58): IssueController->filterProjectContext(Object(CFilterChain))
+#2 D:\TrackStar\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#3 D:\TrackStar\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#4 D:\TrackStar\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#5 D:\TrackStar\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#6 D:\TrackStar\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#7 D:\TrackStar\framework\web\CController.php(291): CFilterChain->run()
+#8 D:\TrackStar\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 D:\TrackStar\framework\web\CWebApplication.php(282): CController->run('admin')
+#10 D:\TrackStar\framework\web\CWebApplication.php(141): CWebApplication->runController('issue/admin')
+#11 D:\TrackStar\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#12 D:\TrackStar\trackstar\index.php(13): CApplication->run()
+#13 {main}
+REQUEST_URI=/trackstar/index.php?r=issue/admin&pid=Issue
+HTTP_REFERER=http://localhost:10111/trackstar/index.php?r=issue/index&pid=2
+---
+2017/02/22 22:27:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested project does not exist.' in D:\TrackStar\trackstar\protected\controllers\IssueController.php:204
+Stack trace:
+#0 D:\TrackStar\trackstar\protected\controllers\IssueController.php(221): IssueController->loadProject('Issue')
+#1 D:\TrackStar\framework\web\filters\CInlineFilter.php(58): IssueController->filterProjectContext(Object(CFilterChain))
+#2 D:\TrackStar\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#3 D:\TrackStar\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#4 D:\TrackStar\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#5 D:\TrackStar\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#6 D:\TrackStar\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#7 D:\TrackStar\framework\web\CController.php(291): CFilterChain->run()
+#8 D:\TrackStar\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 D:\TrackStar\framework\web\CWebApplication.php(282): CController->run('admin')
+#10 D:\TrackStar\framework\web\CWebApplication.php(141): CWebApplication->runController('issue/admin')
+#11 D:\TrackStar\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#12 D:\TrackStar\trackstar\index.php(13): CApplication->run()
+#13 {main}
+REQUEST_URI=/trackstar/index.php?r=issue/admin&pid=Issue
+HTTP_REFERER=http://localhost:10111/trackstar/index.php?r=issue/index&pid=1
+---
+2017/02/22 22:28:46 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'Must specify a project before performing this action.' in D:\TrackStar\trackstar\protected\controllers\IssueController.php:224
+Stack trace:
+#0 D:\TrackStar\framework\web\filters\CInlineFilter.php(58): IssueController->filterProjectContext(Object(CFilterChain))
+#1 D:\TrackStar\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#2 D:\TrackStar\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 D:\TrackStar\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#4 D:\TrackStar\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 D:\TrackStar\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#6 D:\TrackStar\framework\web\CController.php(291): CFilterChain->run()
+#7 D:\TrackStar\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 D:\TrackStar\framework\web\CWebApplication.php(282): CController->run('index')
+#9 D:\TrackStar\framework\web\CWebApplication.php(141): CWebApplication->runController('issue/index')
+#10 D:\TrackStar\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#11 D:\TrackStar\trackstar\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/trackstar/index.php?r=issue/index
+HTTP_REFERER=http://localhost:10111/trackstar/index.php?r=issue/admin&pid=2
+---
+2017/02/22 22:30:17 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'Must specify a project before performing this action.' in D:\TrackStar\trackstar\protected\controllers\IssueController.php:224
+Stack trace:
+#0 D:\TrackStar\framework\web\filters\CInlineFilter.php(58): IssueController->filterProjectContext(Object(CFilterChain))
+#1 D:\TrackStar\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#2 D:\TrackStar\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 D:\TrackStar\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#4 D:\TrackStar\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 D:\TrackStar\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#6 D:\TrackStar\framework\web\CController.php(291): CFilterChain->run()
+#7 D:\TrackStar\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 D:\TrackStar\framework\web\CWebApplication.php(282): CController->run('index')
+#9 D:\TrackStar\framework\web\CWebApplication.php(141): CWebApplication->runController('issue/index')
+#10 D:\TrackStar\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#11 D:\TrackStar\trackstar\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/trackstar/index.php?r=issue/index
+HTTP_REFERER=http://localhost:10111/trackstar/index.php?r=issue/admin&pid=2
+---
+2017/02/22 22:30:30 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested project does not exist.' in D:\TrackStar\trackstar\protected\controllers\IssueController.php:204
+Stack trace:
+#0 D:\TrackStar\trackstar\protected\controllers\IssueController.php(221): IssueController->loadProject('Issue')
+#1 D:\TrackStar\framework\web\filters\CInlineFilter.php(58): IssueController->filterProjectContext(Object(CFilterChain))
+#2 D:\TrackStar\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#3 D:\TrackStar\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#4 D:\TrackStar\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#5 D:\TrackStar\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#6 D:\TrackStar\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#7 D:\TrackStar\framework\web\CController.php(291): CFilterChain->run()
+#8 D:\TrackStar\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 D:\TrackStar\framework\web\CWebApplication.php(282): CController->run('admin')
+#10 D:\TrackStar\framework\web\CWebApplication.php(141): CWebApplication->runController('issue/admin')
+#11 D:\TrackStar\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#12 D:\TrackStar\trackstar\index.php(13): CApplication->run()
+#13 {main}
+REQUEST_URI=/trackstar/index.php?r=issue/admin&pid=Issue
+HTTP_REFERER=http://localhost:10111/trackstar/index.php?r=issue/index&pid=2
+---
+2017/02/22 22:30:53 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'Must specify a project before performing this action.' in D:\TrackStar\trackstar\protected\controllers\IssueController.php:224
+Stack trace:
+#0 D:\TrackStar\framework\web\filters\CInlineFilter.php(58): IssueController->filterProjectContext(Object(CFilterChain))
+#1 D:\TrackStar\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#2 D:\TrackStar\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 D:\TrackStar\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#4 D:\TrackStar\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 D:\TrackStar\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#6 D:\TrackStar\framework\web\CController.php(291): CFilterChain->run()
+#7 D:\TrackStar\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 D:\TrackStar\framework\web\CWebApplication.php(282): CController->run('create')
+#9 D:\TrackStar\framework\web\CWebApplication.php(141): CWebApplication->runController('issue/create')
+#10 D:\TrackStar\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#11 D:\TrackStar\trackstar\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/trackstar/index.php?r=issue/create
+HTTP_REFERER=http://localhost:10111/trackstar/index.php?r=issue/admin&pid=2
+---
+2017/02/22 22:30:58 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'Must specify a project before performing this action.' in D:\TrackStar\trackstar\protected\controllers\IssueController.php:224
+Stack trace:
+#0 D:\TrackStar\framework\web\filters\CInlineFilter.php(58): IssueController->filterProjectContext(Object(CFilterChain))
+#1 D:\TrackStar\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#2 D:\TrackStar\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 D:\TrackStar\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#4 D:\TrackStar\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 D:\TrackStar\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#6 D:\TrackStar\framework\web\CController.php(291): CFilterChain->run()
+#7 D:\TrackStar\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 D:\TrackStar\framework\web\CWebApplication.php(282): CController->run('create')
+#9 D:\TrackStar\framework\web\CWebApplication.php(141): CWebApplication->runController('issue/create')
+#10 D:\TrackStar\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#11 D:\TrackStar\trackstar\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/trackstar/index.php?r=issue/create
+HTTP_REFERER=http://localhost:10111/trackstar/index.php?r=issue/admin&pid=2
+---
+2017/02/22 22:35:08 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'Must specify a project before performing this action.' in D:\TrackStar\trackstar\protected\controllers\IssueController.php:227
+Stack trace:
+#0 D:\TrackStar\framework\web\filters\CInlineFilter.php(58): IssueController->filterProjectContext(Object(CFilterChain))
+#1 D:\TrackStar\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#2 D:\TrackStar\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 D:\TrackStar\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#4 D:\TrackStar\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 D:\TrackStar\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#6 D:\TrackStar\framework\web\CController.php(291): CFilterChain->run()
+#7 D:\TrackStar\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 D:\TrackStar\framework\web\CWebApplication.php(282): CController->run('index')
+#9 D:\TrackStar\framework\web\CWebApplication.php(141): CWebApplication->runController('issue/index')
+#10 D:\TrackStar\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#11 D:\TrackStar\trackstar\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/trackstar/index.php?r=issue/index
+---
+2017/02/22 22:35:24 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'Must specify a project before performing this action.' in D:\TrackStar\trackstar\protected\controllers\IssueController.php:227
+Stack trace:
+#0 D:\TrackStar\framework\web\filters\CInlineFilter.php(58): IssueController->filterProjectContext(Object(CFilterChain))
+#1 D:\TrackStar\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#2 D:\TrackStar\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 D:\TrackStar\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#4 D:\TrackStar\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 D:\TrackStar\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#6 D:\TrackStar\framework\web\CController.php(291): CFilterChain->run()
+#7 D:\TrackStar\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 D:\TrackStar\framework\web\CWebApplication.php(282): CController->run('index')
+#9 D:\TrackStar\framework\web\CWebApplication.php(141): CWebApplication->runController('issue/index')
+#10 D:\TrackStar\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#11 D:\TrackStar\trackstar\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/trackstar/index.php?r=issue/index
+HTTP_REFERER=http://localhost:10111/trackstar/index.php?r=issue/create&pid=1
+---
+2017/02/22 22:35:34 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'Must specify a project before performing this action.' in D:\TrackStar\trackstar\protected\controllers\IssueController.php:227
+Stack trace:
+#0 D:\TrackStar\framework\web\filters\CInlineFilter.php(58): IssueController->filterProjectContext(Object(CFilterChain))
+#1 D:\TrackStar\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#2 D:\TrackStar\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 D:\TrackStar\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#4 D:\TrackStar\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 D:\TrackStar\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#6 D:\TrackStar\framework\web\CController.php(291): CFilterChain->run()
+#7 D:\TrackStar\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 D:\TrackStar\framework\web\CWebApplication.php(282): CController->run('admin')
+#9 D:\TrackStar\framework\web\CWebApplication.php(141): CWebApplication->runController('issue/admin')
+#10 D:\TrackStar\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#11 D:\TrackStar\trackstar\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/trackstar/index.php?r=issue/admin
+HTTP_REFERER=http://localhost:10111/trackstar/index.php?r=issue/create&pid=1
+---
+2017/02/22 22:38:54 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'Must specify a project before performing this action.' in D:\TrackStar\trackstar\protected\controllers\IssueController.php:226
+Stack trace:
+#0 D:\TrackStar\framework\web\filters\CInlineFilter.php(58): IssueController->filterProjectContext(Object(CFilterChain))
+#1 D:\TrackStar\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#2 D:\TrackStar\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 D:\TrackStar\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#4 D:\TrackStar\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 D:\TrackStar\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#6 D:\TrackStar\framework\web\CController.php(291): CFilterChain->run()
+#7 D:\TrackStar\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 D:\TrackStar\framework\web\CWebApplication.php(282): CController->run('index')
+#9 D:\TrackStar\framework\web\CWebApplication.php(141): CWebApplication->runController('issue/index')
+#10 D:\TrackStar\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#11 D:\TrackStar\trackstar\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/trackstar/index.php?r=issue/index
+HTTP_REFERER=http://localhost:10111/trackstar/index.php?r=issue/create&pid=1
+---
+2017/02/22 22:39:06 [error] [php] Trying to get property of non-object (D:\TrackStar\trackstar\protected\views\issue\index.php:10)
+Stack trace:
+#0 D:\TrackStar\framework\web\CController.php(872): IssueController->renderFile()
+#1 D:\TrackStar\framework\web\CController.php(785): IssueController->renderPartial()
+#2 D:\TrackStar\trackstar\protected\controllers\IssueController.php(144): IssueController->render()
+#3 D:\TrackStar\framework\web\actions\CInlineAction.php(49): IssueController->actionIndex()
+#4 D:\TrackStar\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 D:\TrackStar\framework\web\filters\CFilterChain.php(134): IssueController->runAction()
+#6 D:\TrackStar\trackstar\protected\controllers\IssueController.php(229): CFilterChain->run()
+#7 D:\TrackStar\framework\web\filters\CInlineFilter.php(58): IssueController->filterProjectContext()
+#8 D:\TrackStar\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#9 D:\TrackStar\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#10 D:\TrackStar\framework\web\CController.php(1148): CAccessControlFilter->filter()
+#11 D:\TrackStar\framework\web\filters\CInlineFilter.php(58): IssueController->filterAccessControl()
+#12 D:\TrackStar\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#13 D:\TrackStar\framework\web\CController.php(291): CFilterChain->run()
+#14 D:\TrackStar\framework\web\CController.php(265): IssueController->runActionWithFilters()
+#15 D:\TrackStar\framework\web\CWebApplication.php(282): IssueController->run()
+#16 D:\TrackStar\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#17 D:\TrackStar\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#18 D:\TrackStar\trackstar\index.php(13): CWebApplication->run()
+REQUEST_URI=/trackstar/index.php?r=issue/index&pid=1
+in D:\TrackStar\trackstar\protected\views\issue\index.php (10)
+in D:\TrackStar\trackstar\protected\controllers\IssueController.php (144)
+in D:\TrackStar\trackstar\protected\controllers\IssueController.php (229)
+2017/02/22 22:41:14 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'Must specify a project before performing this action.' in D:\TrackStar\trackstar\protected\controllers\IssueController.php:227
+Stack trace:
+#0 D:\TrackStar\framework\web\filters\CInlineFilter.php(58): IssueController->filterProjectContext(Object(CFilterChain))
+#1 D:\TrackStar\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#2 D:\TrackStar\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 D:\TrackStar\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#4 D:\TrackStar\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 D:\TrackStar\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#6 D:\TrackStar\framework\web\CController.php(291): CFilterChain->run()
+#7 D:\TrackStar\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 D:\TrackStar\framework\web\CWebApplication.php(282): CController->run('admin')
+#9 D:\TrackStar\framework\web\CWebApplication.php(141): CWebApplication->runController('issue/admin')
+#10 D:\TrackStar\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#11 D:\TrackStar\trackstar\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/trackstar/index.php?r=issue/admin
+HTTP_REFERER=http://localhost:10111/trackstar/index.php?r=issue/update&id=4
+---
+2017/02/22 22:41:20 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'Must specify a project before performing this action.' in D:\TrackStar\trackstar\protected\controllers\IssueController.php:227
+Stack trace:
+#0 D:\TrackStar\framework\web\filters\CInlineFilter.php(58): IssueController->filterProjectContext(Object(CFilterChain))
+#1 D:\TrackStar\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#2 D:\TrackStar\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 D:\TrackStar\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#4 D:\TrackStar\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 D:\TrackStar\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#6 D:\TrackStar\framework\web\CController.php(291): CFilterChain->run()
+#7 D:\TrackStar\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 D:\TrackStar\framework\web\CWebApplication.php(282): CController->run('create')
+#9 D:\TrackStar\framework\web\CWebApplication.php(141): CWebApplication->runController('issue/create')
+#10 D:\TrackStar\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#11 D:\TrackStar\trackstar\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/trackstar/index.php?r=issue/create
+HTTP_REFERER=http://localhost:10111/trackstar/index.php?r=issue/update&id=4
+---
+2017/02/22 22:41:23 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'Must specify a project before performing this action.' in D:\TrackStar\trackstar\protected\controllers\IssueController.php:227
+Stack trace:
+#0 D:\TrackStar\framework\web\filters\CInlineFilter.php(58): IssueController->filterProjectContext(Object(CFilterChain))
+#1 D:\TrackStar\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#2 D:\TrackStar\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 D:\TrackStar\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#4 D:\TrackStar\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 D:\TrackStar\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#6 D:\TrackStar\framework\web\CController.php(291): CFilterChain->run()
+#7 D:\TrackStar\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 D:\TrackStar\framework\web\CWebApplication.php(282): CController->run('index')
+#9 D:\TrackStar\framework\web\CWebApplication.php(141): CWebApplication->runController('issue/index')
+#10 D:\TrackStar\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#11 D:\TrackStar\trackstar\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/trackstar/index.php?r=issue/index
+HTTP_REFERER=http://localhost:10111/trackstar/index.php?r=issue/update&id=4
+---
+2017/02/22 22:41:28 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'Must specify a project before performing this action.' in D:\TrackStar\trackstar\protected\controllers\IssueController.php:227
+Stack trace:
+#0 D:\TrackStar\framework\web\filters\CInlineFilter.php(58): IssueController->filterProjectContext(Object(CFilterChain))
+#1 D:\TrackStar\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#2 D:\TrackStar\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 D:\TrackStar\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#4 D:\TrackStar\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 D:\TrackStar\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#6 D:\TrackStar\framework\web\CController.php(291): CFilterChain->run()
+#7 D:\TrackStar\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 D:\TrackStar\framework\web\CWebApplication.php(282): CController->run('index')
+#9 D:\TrackStar\framework\web\CWebApplication.php(141): CWebApplication->runController('issue/index')
+#10 D:\TrackStar\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#11 D:\TrackStar\trackstar\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/trackstar/index.php?r=issue/index
+HTTP_REFERER=http://localhost:10111/trackstar/index.php?r=issue/update&id=4
+---
+2017/02/22 22:45:49 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'Must specify a project before performing this action.' in D:\TrackStar\trackstar\protected\controllers\IssueController.php:227
+Stack trace:
+#0 D:\TrackStar\framework\web\filters\CInlineFilter.php(58): IssueController->filterProjectContext(Object(CFilterChain))
+#1 D:\TrackStar\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#2 D:\TrackStar\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 D:\TrackStar\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#4 D:\TrackStar\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 D:\TrackStar\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#6 D:\TrackStar\framework\web\CController.php(291): CFilterChain->run()
+#7 D:\TrackStar\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 D:\TrackStar\framework\web\CWebApplication.php(282): CController->run('index')
+#9 D:\TrackStar\framework\web\CWebApplication.php(141): CWebApplication->runController('issue/index')
+#10 D:\TrackStar\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#11 D:\TrackStar\trackstar\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/trackstar/index.php?r=issue/index
+HTTP_REFERER=http://localhost:10111/trackstar/index.php?r=issue/admin&pid=1
+---
+2017/02/22 22:46:13 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'Must specify a project before performing this action.' in D:\TrackStar\trackstar\protected\controllers\IssueController.php:227
+Stack trace:
+#0 D:\TrackStar\framework\web\filters\CInlineFilter.php(58): IssueController->filterProjectContext(Object(CFilterChain))
+#1 D:\TrackStar\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#2 D:\TrackStar\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 D:\TrackStar\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#4 D:\TrackStar\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 D:\TrackStar\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#6 D:\TrackStar\framework\web\CController.php(291): CFilterChain->run()
+#7 D:\TrackStar\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 D:\TrackStar\framework\web\CWebApplication.php(282): CController->run('index')
+#9 D:\TrackStar\framework\web\CWebApplication.php(141): CWebApplication->runController('issue/index')
+#10 D:\TrackStar\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#11 D:\TrackStar\trackstar\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/trackstar/index.php?r=issue/index
+HTTP_REFERER=http://localhost:10111/trackstar/index.php?r=issue/view&id=4
+---
+2017/02/22 22:47:23 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'Must specify a project before performing this action.' in D:\TrackStar\trackstar\protected\controllers\IssueController.php:227
+Stack trace:
+#0 D:\TrackStar\framework\web\filters\CInlineFilter.php(58): IssueController->filterProjectContext(Object(CFilterChain))
+#1 D:\TrackStar\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#2 D:\TrackStar\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 D:\TrackStar\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#4 D:\TrackStar\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 D:\TrackStar\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#6 D:\TrackStar\framework\web\CController.php(291): CFilterChain->run()
+#7 D:\TrackStar\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 D:\TrackStar\framework\web\CWebApplication.php(282): CController->run('index')
+#9 D:\TrackStar\framework\web\CWebApplication.php(141): CWebApplication->runController('issue/index')
+#10 D:\TrackStar\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#11 D:\TrackStar\trackstar\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/trackstar/index.php?r=issue/index
+HTTP_REFERER=http://localhost:10111/trackstar/index.php?r=issue/update&id=4
+---
+2017/02/22 22:47:32 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'Must specify a project before performing this action.' in D:\TrackStar\trackstar\protected\controllers\IssueController.php:227
+Stack trace:
+#0 D:\TrackStar\framework\web\filters\CInlineFilter.php(58): IssueController->filterProjectContext(Object(CFilterChain))
+#1 D:\TrackStar\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#2 D:\TrackStar\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 D:\TrackStar\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#4 D:\TrackStar\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 D:\TrackStar\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#6 D:\TrackStar\framework\web\CController.php(291): CFilterChain->run()
+#7 D:\TrackStar\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 D:\TrackStar\framework\web\CWebApplication.php(282): CController->run('index')
+#9 D:\TrackStar\framework\web\CWebApplication.php(141): CWebApplication->runController('issue/index')
+#10 D:\TrackStar\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#11 D:\TrackStar\trackstar\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/trackstar/index.php?r=issue/index
+HTTP_REFERER=http://localhost:10111/trackstar/index.php?r=issue/admin&pid=1
+---
+2017/02/22 22:48:19 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'Must specify a project before performing this action.' in D:\TrackStar\trackstar\protected\controllers\IssueController.php:227
+Stack trace:
+#0 D:\TrackStar\framework\web\filters\CInlineFilter.php(58): IssueController->filterProjectContext(Object(CFilterChain))
+#1 D:\TrackStar\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#2 D:\TrackStar\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 D:\TrackStar\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#4 D:\TrackStar\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 D:\TrackStar\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#6 D:\TrackStar\framework\web\CController.php(291): CFilterChain->run()
+#7 D:\TrackStar\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 D:\TrackStar\framework\web\CWebApplication.php(282): CController->run('index')
+#9 D:\TrackStar\framework\web\CWebApplication.php(141): CWebApplication->runController('issue/index')
+#10 D:\TrackStar\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#11 D:\TrackStar\trackstar\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/trackstar/index.php?r=issue/index
+HTTP_REFERER=http://localhost:10111/trackstar/index.php?r=issue/admin&pid=1
+---
+2017/02/22 22:50:36 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'Must specify a project before performing this action.' in D:\TrackStar\trackstar\protected\controllers\IssueController.php:227
+Stack trace:
+#0 D:\TrackStar\framework\web\filters\CInlineFilter.php(58): IssueController->filterProjectContext(Object(CFilterChain))
+#1 D:\TrackStar\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#2 D:\TrackStar\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 D:\TrackStar\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#4 D:\TrackStar\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 D:\TrackStar\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#6 D:\TrackStar\framework\web\CController.php(291): CFilterChain->run()
+#7 D:\TrackStar\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 D:\TrackStar\framework\web\CWebApplication.php(282): CController->run('index')
+#9 D:\TrackStar\framework\web\CWebApplication.php(141): CWebApplication->runController('issue/index')
+#10 D:\TrackStar\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#11 D:\TrackStar\trackstar\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/trackstar/index.php?r=issue/index
+HTTP_REFERER=http://localhost:10111/trackstar/index.php?r=issue/view&id=4
+---
+2017/02/22 22:50:42 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'Must specify a project before performing this action.' in D:\TrackStar\trackstar\protected\controllers\IssueController.php:227
+Stack trace:
+#0 D:\TrackStar\framework\web\filters\CInlineFilter.php(58): IssueController->filterProjectContext(Object(CFilterChain))
+#1 D:\TrackStar\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#2 D:\TrackStar\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 D:\TrackStar\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#4 D:\TrackStar\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 D:\TrackStar\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#6 D:\TrackStar\framework\web\CController.php(291): CFilterChain->run()
+#7 D:\TrackStar\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 D:\TrackStar\framework\web\CWebApplication.php(282): CController->run('index')
+#9 D:\TrackStar\framework\web\CWebApplication.php(141): CWebApplication->runController('issue/index')
+#10 D:\TrackStar\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#11 D:\TrackStar\trackstar\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/trackstar/index.php?r=issue/index
+HTTP_REFERER=http://localhost:10111/trackstar/index.php?r=issue/view&id=4
+---
+2017/02/22 22:59:49 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'Must specify a project before performing this action.' in D:\TrackStar\trackstar\protected\controllers\IssueController.php:227
+Stack trace:
+#0 D:\TrackStar\framework\web\filters\CInlineFilter.php(58): IssueController->filterProjectContext(Object(CFilterChain))
+#1 D:\TrackStar\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#2 D:\TrackStar\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 D:\TrackStar\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#4 D:\TrackStar\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 D:\TrackStar\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#6 D:\TrackStar\framework\web\CController.php(291): CFilterChain->run()
+#7 D:\TrackStar\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 D:\TrackStar\framework\web\CWebApplication.php(282): CController->run('admin')
+#9 D:\TrackStar\framework\web\CWebApplication.php(141): CWebApplication->runController('issue/admin')
+#10 D:\TrackStar\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#11 D:\TrackStar\trackstar\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/trackstar/index.php?r=issue/admin
+---
+2017/02/23 00:17:13 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in D:\TrackStar\framework\web\auth\CAccessControlFilter.php:183
+Stack trace:
+#0 D:\TrackStar\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 D:\TrackStar\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 D:\TrackStar\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#3 D:\TrackStar\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 D:\TrackStar\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 D:\TrackStar\framework\web\CController.php(291): CFilterChain->run()
+#6 D:\TrackStar\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 D:\TrackStar\framework\web\CWebApplication.php(282): CController->run('admin')
+#8 D:\TrackStar\framework\web\CWebApplication.php(141): CWebApplication->runController('user/admin')
+#9 D:\TrackStar\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#10 D:\TrackStar\trackstar\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/trackstar/index.php?r=user/admin
+HTTP_REFERER=http://localhost:10111/trackstar/index.php?r=user/create
+---
+2017/02/23 00:18:05 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in D:\TrackStar\framework\web\auth\CAccessControlFilter.php:183
+Stack trace:
+#0 D:\TrackStar\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 D:\TrackStar\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 D:\TrackStar\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#3 D:\TrackStar\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 D:\TrackStar\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 D:\TrackStar\framework\web\CController.php(291): CFilterChain->run()
+#6 D:\TrackStar\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 D:\TrackStar\framework\web\CWebApplication.php(282): CController->run('admin')
+#8 D:\TrackStar\framework\web\CWebApplication.php(141): CWebApplication->runController('user/admin')
+#9 D:\TrackStar\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#10 D:\TrackStar\trackstar\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/trackstar/index.php?r=user/admin
+HTTP_REFERER=http://localhost:10111/trackstar/index.php?r=user/view&id=6
+---
+2017/02/23 00:27:23 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in D:\TrackStar\framework\web\auth\CAccessControlFilter.php:183
+Stack trace:
+#0 D:\TrackStar\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 D:\TrackStar\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 D:\TrackStar\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#3 D:\TrackStar\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 D:\TrackStar\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 D:\TrackStar\framework\web\CController.php(291): CFilterChain->run()
+#6 D:\TrackStar\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 D:\TrackStar\framework\web\CWebApplication.php(282): CController->run('admin')
+#8 D:\TrackStar\framework\web\CWebApplication.php(141): CWebApplication->runController('user/admin')
+#9 D:\TrackStar\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#10 D:\TrackStar\trackstar\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/trackstar/index.php?r=user/admin
+HTTP_REFERER=http://localhost:10111/trackstar/index.php?r=user/view&id=8
+---
+2017/02/23 00:43:27 [error] [exception.CException] exception 'CException' with message 'Property "CWebApplication.user1" is not defined.' in D:\TrackStar\framework\base\CComponent.php:130
+Stack trace:
+#0 D:\TrackStar\framework\base\CModule.php(105): CComponent->__get('user1')
+#1 D:\TrackStar\trackstar\protected\models\TrackStarActiveRecord.php(17): CModule->__get('user1')
+#2 D:\TrackStar\framework\db\ar\CActiveRecord.php(1077): TrackStarActiveRecord->beforeSave()
+#3 D:\TrackStar\framework\db\ar\CActiveRecord.php(811): CActiveRecord->insert(NULL)
+#4 D:\TrackStar\trackstar\protected\controllers\UserController.php(73): CActiveRecord->save()
+#5 D:\TrackStar\framework\web\actions\CInlineAction.php(49): UserController->actionCreate()
+#6 D:\TrackStar\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#7 D:\TrackStar\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#8 D:\TrackStar\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#9 D:\TrackStar\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#10 D:\TrackStar\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#11 D:\TrackStar\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#12 D:\TrackStar\framework\web\CController.php(291): CFilterChain->run()
+#13 D:\TrackStar\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#14 D:\TrackStar\framework\web\CWebApplication.php(282): CController->run('create')
+#15 D:\TrackStar\framework\web\CWebApplication.php(141): CWebApplication->runController('user/create')
+#16 D:\TrackStar\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#17 D:\TrackStar\trackstar\index.php(13): CApplication->run()
+#18 {main}
+REQUEST_URI=/trackstar/index.php?r=user/create
+HTTP_REFERER=http://localhost:10111/trackstar/index.php?r=user/create
+---
+2017/02/23 01:10:18 [error] [exception.CException] exception 'CException' with message 'Property "User.password_repeat" is not defined.' in D:\TrackStar\framework\base\CComponent.php:130
+Stack trace:
+#0 D:\TrackStar\framework\db\ar\CActiveRecord.php(145): CComponent->__get('password_repeat')
+#1 D:\TrackStar\framework\web\helpers\CHtml.php(2747): CActiveRecord->__get('password_repeat')
+#2 D:\TrackStar\framework\web\helpers\CHtml.php(2470): CHtml::resolveValue(Object(User), 'password_repeat')
+#3 D:\TrackStar\framework\web\helpers\CHtml.php(1814): CHtml::activeInputField('password', Object(User), 'password_repeat', Array)
+#4 D:\TrackStar\framework\web\widgets\CActiveForm.php(838): CHtml::activePasswordField(Object(User), 'password_repeat', Array)
+#5 D:\TrackStar\trackstar\protected\views\user\_form.php(42): CActiveForm->passwordField(Object(User), 'password_repeat', Array)
+#6 D:\TrackStar\framework\web\CBaseController.php(126): require('D:\\TrackStar\\tr...')
+#7 D:\TrackStar\framework\web\CBaseController.php(95): CBaseController->renderInternal('D:\\TrackStar\\tr...', Array, true)
+#8 D:\TrackStar\framework\web\CController.php(872): CBaseController->renderFile('D:\\TrackStar\\tr...', Array, true)
+#9 D:\TrackStar\trackstar\protected\views\user\create.php(18): CController->renderPartial('_form', Array)
+#10 D:\TrackStar\framework\web\CBaseController.php(126): require('D:\\TrackStar\\tr...')
+#11 D:\TrackStar\framework\web\CBaseController.php(95): CBaseController->renderInternal('D:\\TrackStar\\tr...', Array, true)
+#12 D:\TrackStar\framework\web\CController.php(872): CBaseController->renderFile('D:\\TrackStar\\tr...', Array, true)
+#13 D:\TrackStar\framework\web\CController.php(785): CController->renderPartial('create', Array, true)
+#14 D:\TrackStar\trackstar\protected\controllers\UserController.php(79): CController->render('create', Array)
+#15 D:\TrackStar\framework\web\actions\CInlineAction.php(49): UserController->actionCreate()
+#16 D:\TrackStar\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#17 D:\TrackStar\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#18 D:\TrackStar\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#19 D:\TrackStar\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#20 D:\TrackStar\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#21 D:\TrackStar\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#22 D:\TrackStar\framework\web\CController.php(291): CFilterChain->run()
+#23 D:\TrackStar\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#24 D:\TrackStar\framework\web\CWebApplication.php(282): CController->run('create')
+#25 D:\TrackStar\framework\web\CWebApplication.php(141): CWebApplication->runController('user/create')
+#26 D:\TrackStar\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#27 D:\TrackStar\trackstar\index.php(13): CApplication->run()
+#28 {main}
+REQUEST_URI=/trackstar/index.php?r=user/create
+HTTP_REFERER=http://localhost:10111/trackstar/index.php?r=user/index
+---
+2017/02/23 01:11:15 [warning] [application] Failed to set unsafe attribute "password_repea" of "User".
+in D:\TrackStar\trackstar\protected\controllers\UserController.php (72)
+in D:\TrackStar\trackstar\index.php (13)
+2017/02/23 01:11:15 [error] [exception.CException] exception 'CException' with message 'Property "User.password_repeat" is not defined.' in D:\TrackStar\framework\base\CComponent.php:130
+Stack trace:
+#0 D:\TrackStar\framework\db\ar\CActiveRecord.php(145): CComponent->__get('password_repeat')
+#1 D:\TrackStar\framework\validators\CRequiredValidator.php(58): CActiveRecord->__get('password_repeat')
+#2 D:\TrackStar\framework\validators\CValidator.php(201): CRequiredValidator->validateAttribute(Object(User), 'password_repeat')
+#3 D:\TrackStar\framework\base\CModel.php(159): CValidator->validate(Object(User), NULL)
+#4 D:\TrackStar\framework\db\ar\CActiveRecord.php(810): CModel->validate(NULL)
+#5 D:\TrackStar\trackstar\protected\controllers\UserController.php(73): CActiveRecord->save()
+#6 D:\TrackStar\framework\web\actions\CInlineAction.php(49): UserController->actionCreate()
+#7 D:\TrackStar\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#8 D:\TrackStar\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#9 D:\TrackStar\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#10 D:\TrackStar\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#11 D:\TrackStar\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#12 D:\TrackStar\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#13 D:\TrackStar\framework\web\CController.php(291): CFilterChain->run()
+#14 D:\TrackStar\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 D:\TrackStar\framework\web\CWebApplication.php(282): CController->run('create')
+#16 D:\TrackStar\framework\web\CWebApplication.php(141): CWebApplication->runController('user/create')
+#17 D:\TrackStar\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#18 D:\TrackStar\trackstar\index.php(13): CApplication->run()
+#19 {main}
+REQUEST_URI=/trackstar/index.php?r=user/create
+HTTP_REFERER=http://localhost:10111/trackstar/index.php?r=user/create
+---
+2017/02/23 01:13:30 [error] [exception.CException] exception 'CException' with message 'Property "User.password_repeat" is not defined.' in D:\TrackStar\framework\base\CComponent.php:130
+Stack trace:
+#0 D:\TrackStar\framework\db\ar\CActiveRecord.php(145): CComponent->__get('password_repeat')
+#1 D:\TrackStar\framework\validators\CCompareValidator.php(92): CActiveRecord->__get('password_repeat')
+#2 D:\TrackStar\framework\validators\CValidator.php(201): CCompareValidator->validateAttribute(Object(User), 'password')
+#3 D:\TrackStar\framework\base\CModel.php(159): CValidator->validate(Object(User), NULL)
+#4 D:\TrackStar\framework\db\ar\CActiveRecord.php(810): CModel->validate(NULL)
+#5 D:\TrackStar\trackstar\protected\controllers\UserController.php(73): CActiveRecord->save()
+#6 D:\TrackStar\framework\web\actions\CInlineAction.php(49): UserController->actionCreate()
+#7 D:\TrackStar\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#8 D:\TrackStar\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#9 D:\TrackStar\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#10 D:\TrackStar\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#11 D:\TrackStar\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#12 D:\TrackStar\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#13 D:\TrackStar\framework\web\CController.php(291): CFilterChain->run()
+#14 D:\TrackStar\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 D:\TrackStar\framework\web\CWebApplication.php(282): CController->run('create')
+#16 D:\TrackStar\framework\web\CWebApplication.php(141): CWebApplication->runController('user/create')
+#17 D:\TrackStar\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#18 D:\TrackStar\trackstar\index.php(13): CApplication->run()
+#19 {main}
+REQUEST_URI=/trackstar/index.php?r=user/create
+HTTP_REFERER=http://localhost:10111/trackstar/index.php?r=user/create
+---
+2017/02/23 01:24:01 [error] [exception.CException] exception 'CException' with message 'User and its behaviors do not have a method or closure named "hashPasword".' in D:\TrackStar\framework\base\CComponent.php:266
+Stack trace:
+#0 D:\TrackStar\framework\db\ar\CActiveRecord.php(229): CComponent->__call('hashPasword', Array)
+#1 D:\TrackStar\trackstar\protected\models\User.php(134): CActiveRecord->__call('hashPasword', Array)
+#2 D:\TrackStar\trackstar\protected\models\User.php(134): User->hashPasword('test1')
+#3 D:\TrackStar\framework\base\CModel.php(160): User->afterValidate()
+#4 D:\TrackStar\framework\db\ar\CActiveRecord.php(810): CModel->validate(NULL)
+#5 D:\TrackStar\trackstar\protected\controllers\UserController.php(73): CActiveRecord->save()
+#6 D:\TrackStar\framework\web\actions\CInlineAction.php(49): UserController->actionCreate()
+#7 D:\TrackStar\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#8 D:\TrackStar\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#9 D:\TrackStar\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#10 D:\TrackStar\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#11 D:\TrackStar\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#12 D:\TrackStar\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#13 D:\TrackStar\framework\web\CController.php(291): CFilterChain->run()
+#14 D:\TrackStar\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 D:\TrackStar\framework\web\CWebApplication.php(282): CController->run('create')
+#16 D:\TrackStar\framework\web\CWebApplication.php(141): CWebApplication->runController('user/create')
+#17 D:\TrackStar\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#18 D:\TrackStar\trackstar\index.php(13): CApplication->run()
+#19 {main}
+REQUEST_URI=/trackstar/index.php?r=user/create
+HTTP_REFERER=http://localhost:10111/trackstar/index.php?r=user/create
+---
+2017/02/23 01:36:45 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in D:\TrackStar\framework\web\auth\CAccessControlFilter.php:183
+Stack trace:
+#0 D:\TrackStar\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 D:\TrackStar\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 D:\TrackStar\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#3 D:\TrackStar\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 D:\TrackStar\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 D:\TrackStar\framework\web\CController.php(291): CFilterChain->run()
+#6 D:\TrackStar\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 D:\TrackStar\framework\web\CWebApplication.php(282): CController->run('admin')
+#8 D:\TrackStar\framework\web\CWebApplication.php(141): CWebApplication->runController('user/admin')
+#9 D:\TrackStar\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#10 D:\TrackStar\trackstar\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/trackstar/index.php?r=user/admin
+HTTP_REFERER=http://localhost:10111/trackstar/index.php?r=user/view&id=18
+---
