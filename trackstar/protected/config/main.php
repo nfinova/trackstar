@@ -30,6 +30,16 @@ return array(
 
 	// application components
 	'components'=>array(
+        
+        'components'=>array(
+            'authManager'=>array(
+                'class'=>'CDbAuthManager',
+                'connectionId'=>'db',
+                'itemTable'=>'tbl_auth_item',
+                'itemChildTable'=>'tbl_auth_item_child',
+                'assignmentTable'=>'tbl_auth_assignment',
+            ),
+        ),
 
 		'user'=>array(
 			// enable cookie-based authentication

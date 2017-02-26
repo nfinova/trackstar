@@ -1521,3 +1521,281 @@ Stack trace:
 REQUEST_URI=/trackstar/index.php?r=user/admin
 HTTP_REFERER=http://localhost:10111/trackstar/index.php?r=user/view&id=18
 ---
+2017/02/23 23:55:23 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in D:\TrackStar\framework\web\auth\CAccessControlFilter.php:183
+Stack trace:
+#0 D:\TrackStar\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 D:\TrackStar\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 D:\TrackStar\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#3 D:\TrackStar\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 D:\TrackStar\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 D:\TrackStar\framework\web\CController.php(291): CFilterChain->run()
+#6 D:\TrackStar\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 D:\TrackStar\framework\web\CWebApplication.php(282): CController->run('admin')
+#8 D:\TrackStar\framework\web\CWebApplication.php(141): CWebApplication->runController('user/admin')
+#9 D:\TrackStar\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#10 D:\TrackStar\trackstar\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/trackstar/index.php?r=user/admin
+HTTP_REFERER=http://localhost:10111/trackstar/index.php?r=user/index
+---
+2017/02/24 00:43:38 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in D:\TrackStar\framework\web\auth\CAccessControlFilter.php:183
+Stack trace:
+#0 D:\TrackStar\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 D:\TrackStar\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 D:\TrackStar\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#3 D:\TrackStar\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 D:\TrackStar\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 D:\TrackStar\framework\web\CController.php(291): CFilterChain->run()
+#6 D:\TrackStar\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 D:\TrackStar\framework\web\CWebApplication.php(282): CController->run('admin')
+#8 D:\TrackStar\framework\web\CWebApplication.php(141): CWebApplication->runController('project/admin')
+#9 D:\TrackStar\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#10 D:\TrackStar\trackstar\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/trackstar/index.php?r=project/admin
+HTTP_REFERER=http://localhost:10111/trackstar/index.php?r=project/index
+---
+2017/02/25 01:02:11 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in D:\TrackStar\framework\web\auth\CAccessControlFilter.php:183
+Stack trace:
+#0 D:\TrackStar\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 D:\TrackStar\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 D:\TrackStar\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#3 D:\TrackStar\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 D:\TrackStar\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 D:\TrackStar\framework\web\CController.php(291): CFilterChain->run()
+#6 D:\TrackStar\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 D:\TrackStar\framework\web\CWebApplication.php(282): CController->run('admin')
+#8 D:\TrackStar\framework\web\CWebApplication.php(141): CWebApplication->runController('user/admin')
+#9 D:\TrackStar\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#10 D:\TrackStar\trackstar\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/trackstar/index.php?r=user/admin
+HTTP_REFERER=http://localhost:10111/trackstar/index.php?r=site/login
+---
+2017/02/25 02:28:21 [error] [exception.CException] exception 'CException' with message 'Property "CAccessRule.contorollers" is not defined.' in D:\TrackStar\framework\base\CComponent.php:173
+Stack trace:
+#0 D:\TrackStar\framework\web\auth\CAccessControlFilter.php(115): CComponent->__set('contorollers', Array)
+#1 D:\TrackStar\framework\web\CController.php(1147): CAccessControlFilter->setRules(Array)
+#2 D:\TrackStar\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#3 D:\TrackStar\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#4 D:\TrackStar\framework\web\CController.php(291): CFilterChain->run()
+#5 D:\TrackStar\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 D:\TrackStar\framework\web\CWebApplication.php(282): CController->run('index')
+#7 D:\TrackStar\framework\web\CWebApplication.php(141): CWebApplication->runController('project/index')
+#8 D:\TrackStar\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#9 D:\TrackStar\trackstar\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/trackstar/index.php?r=project/index
+HTTP_REFERER=http://localhost:10111/trackstar/index.php?r=user/index
+---
+2017/02/25 02:28:23 [error] [exception.CException] exception 'CException' with message 'Property "CAccessRule.contorollers" is not defined.' in D:\TrackStar\framework\base\CComponent.php:173
+Stack trace:
+#0 D:\TrackStar\framework\web\auth\CAccessControlFilter.php(115): CComponent->__set('contorollers', Array)
+#1 D:\TrackStar\framework\web\CController.php(1147): CAccessControlFilter->setRules(Array)
+#2 D:\TrackStar\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#3 D:\TrackStar\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#4 D:\TrackStar\framework\web\CController.php(291): CFilterChain->run()
+#5 D:\TrackStar\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 D:\TrackStar\framework\web\CWebApplication.php(282): CController->run('index')
+#7 D:\TrackStar\framework\web\CWebApplication.php(141): CWebApplication->runController('user/index')
+#8 D:\TrackStar\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#9 D:\TrackStar\trackstar\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/trackstar/index.php?r=user/index
+HTTP_REFERER=http://localhost:10111/trackstar/index.php?r=site/login
+---
+2017/02/25 02:28:29 [error] [exception.CException] exception 'CException' with message 'Property "CAccessRule.contorollers" is not defined.' in D:\TrackStar\framework\base\CComponent.php:173
+Stack trace:
+#0 D:\TrackStar\framework\web\auth\CAccessControlFilter.php(115): CComponent->__set('contorollers', Array)
+#1 D:\TrackStar\framework\web\CController.php(1147): CAccessControlFilter->setRules(Array)
+#2 D:\TrackStar\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#3 D:\TrackStar\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#4 D:\TrackStar\framework\web\CController.php(291): CFilterChain->run()
+#5 D:\TrackStar\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 D:\TrackStar\framework\web\CWebApplication.php(282): CController->run('index')
+#7 D:\TrackStar\framework\web\CWebApplication.php(141): CWebApplication->runController('user/index')
+#8 D:\TrackStar\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#9 D:\TrackStar\trackstar\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/trackstar/index.php?r=user/index
+HTTP_REFERER=http://localhost:10111/trackstar/index.php?r=site/index
+---
+2017/02/25 02:28:35 [error] [exception.CException] exception 'CException' with message 'Property "CAccessRule.contorollers" is not defined.' in D:\TrackStar\framework\base\CComponent.php:173
+Stack trace:
+#0 D:\TrackStar\framework\web\auth\CAccessControlFilter.php(115): CComponent->__set('contorollers', Array)
+#1 D:\TrackStar\framework\web\CController.php(1147): CAccessControlFilter->setRules(Array)
+#2 D:\TrackStar\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#3 D:\TrackStar\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#4 D:\TrackStar\framework\web\CController.php(291): CFilterChain->run()
+#5 D:\TrackStar\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 D:\TrackStar\framework\web\CWebApplication.php(282): CController->run('index')
+#7 D:\TrackStar\framework\web\CWebApplication.php(141): CWebApplication->runController('project/index')
+#8 D:\TrackStar\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#9 D:\TrackStar\trackstar\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/trackstar/index.php?r=project/index
+HTTP_REFERER=http://localhost:10111/trackstar/index.php?r=site/index
+---
+2017/02/25 02:28:48 [error] [exception.CException] exception 'CException' with message 'Property "CAccessRule.contorollers" is not defined.' in D:\TrackStar\framework\base\CComponent.php:173
+Stack trace:
+#0 D:\TrackStar\framework\web\auth\CAccessControlFilter.php(115): CComponent->__set('contorollers', Array)
+#1 D:\TrackStar\framework\web\CController.php(1147): CAccessControlFilter->setRules(Array)
+#2 D:\TrackStar\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#3 D:\TrackStar\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#4 D:\TrackStar\framework\web\CController.php(291): CFilterChain->run()
+#5 D:\TrackStar\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 D:\TrackStar\framework\web\CWebApplication.php(282): CController->run('create')
+#7 D:\TrackStar\framework\web\CWebApplication.php(141): CWebApplication->runController('user/create')
+#8 D:\TrackStar\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#9 D:\TrackStar\trackstar\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/trackstar/index.php?r=user/create
+HTTP_REFERER=http://localhost:10111/trackstar/index.php?r=site/login
+---
+2017/02/25 02:31:01 [error] [exception.CException] exception 'CException' with message 'Property "CAccessRule.contorollers" is not defined.' in D:\TrackStar\framework\base\CComponent.php:173
+Stack trace:
+#0 D:\TrackStar\framework\web\auth\CAccessControlFilter.php(115): CComponent->__set('contorollers', Array)
+#1 D:\TrackStar\framework\web\CController.php(1147): CAccessControlFilter->setRules(Array)
+#2 D:\TrackStar\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#3 D:\TrackStar\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#4 D:\TrackStar\framework\web\CController.php(291): CFilterChain->run()
+#5 D:\TrackStar\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 D:\TrackStar\framework\web\CWebApplication.php(282): CController->run('create')
+#7 D:\TrackStar\framework\web\CWebApplication.php(141): CWebApplication->runController('user/create')
+#8 D:\TrackStar\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#9 D:\TrackStar\trackstar\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/trackstar/index.php?r=user/create
+HTTP_REFERER=http://localhost:10111/trackstar/index.php?r=site/login
+---
+2017/02/25 02:32:37 [error] [exception.CException] exception 'CException' with message 'Property "CAccessRule.contorollers" is not defined.' in D:\TrackStar\framework\base\CComponent.php:173
+Stack trace:
+#0 D:\TrackStar\framework\web\auth\CAccessControlFilter.php(115): CComponent->__set('contorollers', Array)
+#1 D:\TrackStar\framework\web\CController.php(1147): CAccessControlFilter->setRules(Array)
+#2 D:\TrackStar\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#3 D:\TrackStar\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#4 D:\TrackStar\framework\web\CController.php(291): CFilterChain->run()
+#5 D:\TrackStar\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 D:\TrackStar\framework\web\CWebApplication.php(282): CController->run('index')
+#7 D:\TrackStar\framework\web\CWebApplication.php(141): CWebApplication->runController('project/index')
+#8 D:\TrackStar\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#9 D:\TrackStar\trackstar\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/trackstar/index.php?r=project/index
+HTTP_REFERER=http://localhost:10111/trackstar/index.php
+---
+2017/02/25 02:38:08 [error] [exception.CException] exception 'CException' with message 'Property "CAccessRule.contorollers" is not defined.' in D:\TrackStar\framework\base\CComponent.php:173
+Stack trace:
+#0 D:\TrackStar\framework\web\auth\CAccessControlFilter.php(115): CComponent->__set('contorollers', Array)
+#1 D:\TrackStar\framework\web\CController.php(1147): CAccessControlFilter->setRules(Array)
+#2 D:\TrackStar\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#3 D:\TrackStar\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#4 D:\TrackStar\framework\web\CController.php(291): CFilterChain->run()
+#5 D:\TrackStar\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 D:\TrackStar\framework\web\CWebApplication.php(282): CController->run('index')
+#7 D:\TrackStar\framework\web\CWebApplication.php(141): CWebApplication->runController('project/index')
+#8 D:\TrackStar\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#9 D:\TrackStar\trackstar\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/trackstar/index.php?r=project/index
+HTTP_REFERER=http://localhost:10111/trackstar/index.php
+---
+2017/02/25 02:38:57 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in D:\TrackStar\framework\web\auth\CAccessControlFilter.php:183
+Stack trace:
+#0 D:\TrackStar\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 D:\TrackStar\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 D:\TrackStar\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#3 D:\TrackStar\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 D:\TrackStar\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 D:\TrackStar\framework\web\CController.php(291): CFilterChain->run()
+#6 D:\TrackStar\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 D:\TrackStar\framework\web\CWebApplication.php(282): CController->run('admin')
+#8 D:\TrackStar\framework\web\CWebApplication.php(141): CWebApplication->runController('project/admin')
+#9 D:\TrackStar\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#10 D:\TrackStar\trackstar\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/trackstar/index.php?r=project/admin
+HTTP_REFERER=http://localhost:10111/trackstar/index.php?r=project/view&id=1
+---
+2017/02/25 20:48:40 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in D:\TrackStar\framework\web\auth\CAccessControlFilter.php:183
+Stack trace:
+#0 D:\TrackStar\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 D:\TrackStar\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 D:\TrackStar\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#3 D:\TrackStar\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 D:\TrackStar\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 D:\TrackStar\framework\web\CController.php(291): CFilterChain->run()
+#6 D:\TrackStar\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 D:\TrackStar\framework\web\CWebApplication.php(282): CController->run('admin')
+#8 D:\TrackStar\framework\web\CWebApplication.php(141): CWebApplication->runController('user/admin')
+#9 D:\TrackStar\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#10 D:\TrackStar\trackstar\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/trackstar/index.php?r=user/admin
+HTTP_REFERER=http://localhost:10111/trackstar/index.php?r=user/view&id=19
+---
+2017/02/26 03:02:53 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'trackstar.tbl_autj_assignment' doesn't exist. The SQL statement executed was: ALTER TABLE `tbl_autj_assignment` ADD CONSTRAINT `fk_auth_assignment_itemname` FOREIGN KEY (`itemname`) REFERENCES `tbl_auth_item` (`name`) ON DELETE CASCADE ON UPDATE CASCADE.
+2017/02/26 03:02:53 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'trackstar.tbl_autj_assignment' doesn't exist. The SQL statement executed was: ALTER TABLE `tbl_autj_assignment` ADD CONSTRAINT `fk_auth_assignment_itemname` FOREIGN KEY (`itemname`) REFERENCES `tbl_auth_item` (`name`) ON DELETE CASCADE ON UPDATE CASCADE' in D:\TrackStar\framework\db\CDbCommand.php:358
+Stack trace:
+#0 D:\TrackStar\framework\db\CDbCommand.php(1463): CDbCommand->execute()
+#1 D:\TrackStar\framework\db\CDbMigration.php(366): CDbCommand->addForeignKey('fk_auth_assignm...', 'tbl_autj_assign...', 'itemname', 'tbl_auth_item', 'name', 'CASCADE', 'CASCADE')
+#2 D:\TrackStar\trackstar\protected\migrations\m170226_013309_create_rbac_tables.php(43): CDbMigration->addForeignKey('fk_auth_assignm...', 'tbl_autj_assign...', 'itemname', 'tbl_auth_item', 'name', 'CASCADE', 'CASCADE')
+#3 D:\TrackStar\framework\cli\commands\MigrateCommand.php(415): m170226_013309_create_rbac_tables->up()
+#4 D:\TrackStar\framework\cli\commands\MigrateCommand.php(109): MigrateCommand->migrateUp('m170226_013309_...')
+#5 [internal function]: MigrateCommand->actionUp(Array)
+#6 D:\TrackStar\framework\console\CConsoleCommand.php(172): ReflectionMethod->invokeArgs(Object(MigrateCommand), Array)
+#7 D:\TrackStar\framework\console\CConsoleCommandRunner.php(71): CConsoleCommand->run(Array)
+#8 D:\TrackStar\framework\console\CConsoleApplication.php(92): CConsoleCommandRunner->run(Array)
+#9 D:\TrackStar\framework\base\CApplication.php(185): CConsoleApplication->processRequest()
+#10 D:\TrackStar\framework\yiic.php(33): CApplication->run()
+#11 D:\TrackStar\trackstar\protected\yiic.php(7): require_once('D:\\TrackStar\\fr...')
+#12 {main}
+---
+2017/02/26 03:04:06 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[42S01]: Base table or view already exists: 1050 Table 'tbl_auth_item' already exists. The SQL statement executed was: CREATE TABLE `tbl_auth_item` (
+	`name` varchar(64) NOT NULL,
+	`type` int(11) NOT NULL,
+	`description` text,
+	`bizrule` text,
+	`data` text,
+	PRIMARY KEY(`name`)
+) ENGINE=InnoDB.
+2017/02/26 03:04:06 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42S01]: Base table or view already exists: 1050 Table 'tbl_auth_item' already exists. The SQL statement executed was: CREATE TABLE `tbl_auth_item` (
+	`name` varchar(64) NOT NULL,
+	`type` int(11) NOT NULL,
+	`description` text,
+	`bizrule` text,
+	`data` text,
+	PRIMARY KEY(`name`)
+) ENGINE=InnoDB' in D:\TrackStar\framework\db\CDbCommand.php:358
+Stack trace:
+#0 D:\TrackStar\framework\db\CDbCommand.php(1352): CDbCommand->execute()
+#1 D:\TrackStar\framework\db\CDbMigration.php(250): CDbCommand->createTable('tbl_auth_item', Array, 'ENGINE=InnoDB')
+#2 D:\TrackStar\trackstar\protected\migrations\m170226_013309_create_rbac_tables.php(15): CDbMigration->createTable('tbl_auth_item', Array, 'ENGINE=InnoDB')
+#3 D:\TrackStar\framework\cli\commands\MigrateCommand.php(415): m170226_013309_create_rbac_tables->up()
+#4 D:\TrackStar\framework\cli\commands\MigrateCommand.php(109): MigrateCommand->migrateUp('m170226_013309_...')
+#5 [internal function]: MigrateCommand->actionUp(Array)
+#6 D:\TrackStar\framework\console\CConsoleCommand.php(172): ReflectionMethod->invokeArgs(Object(MigrateCommand), Array)
+#7 D:\TrackStar\framework\console\CConsoleCommandRunner.php(71): CConsoleCommand->run(Array)
+#8 D:\TrackStar\framework\console\CConsoleApplication.php(92): CConsoleCommandRunner->run(Array)
+#9 D:\TrackStar\framework\base\CApplication.php(185): CConsoleApplication->processRequest()
+#10 D:\TrackStar\framework\yiic.php(33): CApplication->run()
+#11 D:\TrackStar\trackstar\protected\yiic.php(7): require_once('D:\\TrackStar\\fr...')
+#12 {main}
+---
+2017/02/26 16:59:15 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in D:\TrackStar\framework\web\auth\CAccessControlFilter.php:183
+Stack trace:
+#0 D:\TrackStar\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 D:\TrackStar\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 D:\TrackStar\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#3 D:\TrackStar\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 D:\TrackStar\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 D:\TrackStar\framework\web\CController.php(291): CFilterChain->run()
+#6 D:\TrackStar\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 D:\TrackStar\framework\web\CWebApplication.php(282): CController->run('admin')
+#8 D:\TrackStar\framework\web\CWebApplication.php(141): CWebApplication->runController('user/admin')
+#9 D:\TrackStar\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#10 D:\TrackStar\trackstar\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/trackstar/index.php?r=user/admin
+HTTP_REFERER=http://localhost:10111/trackstar/index.php?r=user/view&id=20
+---
